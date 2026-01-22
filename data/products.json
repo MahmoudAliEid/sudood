@@ -1,0 +1,365 @@
+[
+  {
+    "id": "1",
+    "image": ["/products/5.png"],
+    "name": {
+      "ar": "محبس سكين خارجي شد وصل نحاس",
+      "en": "PPR Ball Valve"
+    },
+    "description": {
+      "ar": "يستخدم في أنظمة المياه الباردة والساخنة، يتميز بمقاومة عالية للصدأ والتآكل ومتانته العالية وقدرته على تحمل الضغوط ودرجات الحرارة المختلفة وسهولة تركيبه ولحامه مما يجعله خياراً موثوقاً للتوصيل وقطع تدفق السوائل في التطبيقات السكنية والصناعية المختلفة",
+      "en": "Used in cold and hot water systems, featuring high resistance to rust and corrosion, excellent durability, ability to withstand various pressures and temperatures, and ease of installation and welding, making it a reliable choice for connecting and controlling fluid flow in various residential and industrial applications"
+    },
+    "category": {
+      "ar": "محابس PPR",
+      "en": "PPR Valves"
+    },
+    "series": "TPPR SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 25",
+      "temperatureRange": {
+        "ar": "من 0 إلى 120 درجة مئوية",
+        "en": "0°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس - بولي بروبلين PPR",
+        "en": "Brass - Polypropylene PPR"
+      }
+    },
+    "models": [
+      {"code": "TPPR20", "size": "1/2\"", "diameter": 13},
+      {"code": "TPPR25", "size": "3/4\"", "diameter": 17.5},
+      {"code": "TPPR32", "size": "1\"", "diameter": 23},
+      {"code": "TPPR40", "size": "1-1/4\"", "diameter": 31.5},
+      {"code": "TPPR50", "size": "1-1/2\"", "diameter": 40},
+      {"code": "TPPR63", "size": "2\"", "diameter": 49.3}
+    ]
+  },
+  {
+    "id": "2",
+    "image": ["/products/6.png"],
+    "name": {
+      "ar": "محبس سكين خارجي شد وصل نحاس",
+      "en": "PPR Ball Valve"
+    },
+    "description": {
+      "ar": "يستخدم في أنظمة المياه الباردة والساخنة، يتميز بمقاومة عالية للصدأ والتآكل ومتانته العالية وقدرته على تحمل الضغوط ودرجات الحرارة المختلفة وسهولة تركيبه ولحامه مما يجعله خياراً موثوقاً للتوصيل وقطع تدفق السوائل في التطبيقات السكنية والصناعية المختلفة",
+      "en": "Used in cold and hot water systems, featuring high resistance to rust and corrosion, excellent durability, ability to withstand various pressures and temperatures, and ease of installation and welding, making it a reliable choice for connecting and controlling fluid flow in various residential and industrial applications"
+    },
+    "category": {
+      "ar": "محابس PPR",
+      "en": "PPR Valves"
+    },
+    "series": "2TPPR SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "من 0 إلى 120 درجة مئوية",
+        "en": "0°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس - بولي بروبلين PPR",
+        "en": "Brass - Polypropylene PPR"
+      }
+    },
+    "models": [
+      {"code": "2TPPR20", "size": "1/2\"", "diameter": 12},
+      {"code": "2TPPR25", "size": "3/4\"", "diameter": 15},
+      {"code": "2TPPR32", "size": "1\"", "diameter": 20},
+      {"code": "2TPPR40", "size": "1-1/4\"", "diameter": 28},
+      {"code": "2TPPR50", "size": "1-1/2\"", "diameter": 35},
+      {"code": "2TPPR63", "size": "2\"", "diameter": 45}
+    ]
+  },
+  {
+    "id": "3",
+    "image": ["/products/7.png"],
+    "name": {
+      "ar": "بربور نحاس (ثقيل) الاستحدامات السباقة",
+      "en": "Hose Bibcock"
+    },
+    "description": {
+      "ar": "يفضل جسمه التخاصي المتين و تصميم القلب الكروي العملي توفر هذه الحنفية أداء موثوقاً و متانة استثنائية للاستخدام الثقيل تأتي خيارين خارجي للتوصيل المباشر مع نقاط مخصص للخراطيم أو أجهزة التصريف الأوتوماتيكية سهل التركيب و الاستخدام مما يجعله الخيار الأمثل للحدائق، الأفنية، و المرافق الخارجية، غسالات الملابس",
+      "en": "Its specialized robust body design and practical ball core provide reliable performance and exceptional durability for heavy-duty use. Available with external connections for direct hose attachment or automatic drainage devices. Easy to install and use, making it the ideal choice for gardens, patios, outdoor facilities, and washing machines"
+    },
+    "category": {
+      "ar": "محابس خارجية",
+      "en": "Outdoor Valves"
+    },
+    "series": "THBV SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 25",
+      "temperatureRange": {
+        "ar": "من 0 إلى 120 درجة مئوية",
+        "en": "0°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "THBV050", "size": "1/2\"", "diameter": 12}
+    ]
+  },
+  {
+    "id": "4",
+    "image": ["/products/8.png"],
+    "name": {
+      "ar": "بربور نحاس (اقتصادي)",
+      "en": "Hose Bibcock"
+    },
+    "description": {
+      "ar": "صمم ليكون اقتصادي و موثوق للمياه يأتيه الكروي العملي توفر هذه الحنفية أداء موثوقاً تأتي بسعر خارجي للتوصيل المباشر مع نقاط مخصص للخراطيم أو أجهزة التصريف الأوتوماتيكية سهل التركيب و الاستخدام مما يجعله الخيار الأمثل للحدائق، الأفنية، و المرافق الخارجية، غسالات الملابس",
+      "en": "Designed to be economical and reliable for water supply. Its practical ball core provides reliable performance at an affordable price. Available with external connections for direct hose attachment or automatic drainage devices. Easy to install and use, making it the ideal choice for gardens, patios, outdoor facilities, and washing machines"
+    },
+    "category": {
+      "ar": "محابس خارجية",
+      "en": "Outdoor Valves"
+    },
+    "series": "2THBV SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "من 0 إلى 120 درجة مئوية",
+        "en": "0°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "2THBV050", "size": "1/2\"", "diameter": 10},
+      {"code": "2THBV075", "size": "3/4\"", "diameter": 12},
+      {"code": "2THBV100", "size": "1\"", "diameter": 14}
+    ]
+  },
+  {
+    "id": "5",
+    "image": ["/products/4.png"],
+    "name": {
+      "ar": "محبس زاوية طويل",
+      "en": "Angle Valve"
+    },
+    "description": {
+      "ar": "يتميز بتقنير جذاب للأنابيب مع جسم نحاسي مطلي بالكروم يمنحه قوة و متانه و عمر خدمه طويل يستخدم على نطاق واسع في المطابخ، الحمامات، سخانات المياه، الاحواض و المراحيض",
+      "en": "Features an attractive chrome-plated brass body that provides strength, durability, and long service life. Widely used in kitchens, bathrooms, water heaters, sinks, and toilets"
+    },
+    "category": {
+      "ar": "محابس منزلية",
+      "en": "Domestic Valves"
+    },
+    "series": "TJF SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "من 0 إلى 120 درجة مئوية",
+        "en": "0°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس مطلي بالكروم",
+        "en": "Chrome-plated Brass"
+      }
+    },
+    "models": [
+      {"code": "TJF050", "size": "1/2\"", "diameter": 103}
+    ]
+  },
+  {
+    "id": "6",
+    "image": ["/products/3.png"],
+    "name": {
+      "ar": "صمام كروي نحاس ثقيل ( محبس هواء ) للاستخدامات الشاقة",
+      "en": "Thread Ball Valve (Heavy-Duty)"
+    },
+    "description": {
+      "ar": "مصمم للتحكم الدقيق في تدفق السوائل والغازات من خلال كرة داخلية للإغلاق بتقنية Full Port حيث تكون الفتحة الداخلية مساوية لقطر الأنبوب لضمان تدفق كامل وسلس دون فقدان الضغط. يتميز بهيكل متين يتحمل الاستخدامات الشاقة Heavy-Duty مع مقاومة ممتازة لدرجات الحرارة المرتفعة والمنخفضة يفضل هذا التصميم المتطور يعد خيارا موثوقا وفعالا لأنظمة المياه والغاز مع أداء ثابت وعمر تشغيلي طويل.",
+      "en": "Designed for precise control of fluid and gas flow through an internal ball with Full Port technology, where the internal opening is equal to the pipe diameter to ensure full, smooth flow without pressure loss. It features a heavy-duty robust body that withstands demanding applications with excellent resistance to high and low temperatures. This advanced design is a reliable and efficient choice for water and gas systems with consistent performance and long service life."
+    },
+    "category": {
+      "ar": "محابس كروية",
+      "en": "Ball Valves"
+    },
+    "series": "TXN SERIES",
+    "certifications": ["SASO", "ISO 9001", "UL", "FM", "CSA"],
+    "specifications": {
+      "pressure": "PN 40",
+      "temperatureRange": {
+        "ar": "من -40 إلى 150 درجة مئوية",
+        "en": "-40°C to 150°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "TXN025", "size": "1/4\"", "diameter": 10},
+      {"code": "TXN038", "size": "3/8\"", "diameter": 10},
+      {"code": "TXN050", "size": "1/2\"", "diameter": 15},
+      {"code": "TXN075", "size": "3/4\"", "diameter": 19},
+      {"code": "TXN100", "size": "1\"", "diameter": 25},
+      {"code": "TXN125", "size": "1-1/4\"", "diameter": 32},
+      {"code": "TXN150", "size": "1-1/2\"", "diameter": 40},
+      {"code": "TXN200", "size": "2\"", "diameter": 50},
+      {"code": "TXN250", "size": "2-1/2\"", "diameter": 65},
+      {"code": "TXN300", "size": "3\"", "diameter": 80},
+      {"code": "TXN400", "size": "4\"", "diameter": 100}
+    ]
+  },
+  {
+    "id": "7",
+    "image": ["/products/9.png"],
+    "name": {
+      "ar": "صمام كروي نحاس اقتصادي ( محبس هواء )",
+      "en": "Thread Ball Valve"
+    },
+    "description": {
+      "ar": "محبس كروي قياسي اقتصادي وموفر للمياه يجمع هذا الصمام بين الكفاءة والاعتمادية والاعتمادية حيث يقدم أداء متميزا مع قدرة عالية على تقليل استهلاك المياه مما يجعله خيارا عمليا وموفرا للتكاليف في أنظمة المياه السكنية والتجارية.",
+      "en": "Economical and water-saving standard ball valve that combines efficiency and reliability. It offers excellent performance with high water consumption reduction, making it a practical and cost-effective choice for residential and commercial water systems."
+    },
+    "category": {
+      "ar": "محابس كروية",
+      "en": "Ball Valves"
+    },
+    "series": "2TXG SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 20",
+      "temperatureRange": {
+        "ar": "من -20 إلى 120 درجة مئوية",
+        "en": "-20°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "2TXG050", "size": "1/2\"", "diameter": 10},
+      {"code": "2TXG075", "size": "3/4\"", "diameter": 15},
+      {"code": "2TXG100", "size": "1\"", "diameter": 19},
+      {"code": "2TXG125", "size": "1-1/4\"", "diameter": 25},
+      {"code": "2TXG150", "size": "1-1/2\"", "diameter": 32},
+      {"code": "2TXG200", "size": "2\"", "diameter": 40},
+      {"code": "2TXG250", "size": "2-1/2\"", "diameter": 50},
+      {"code": "2TXG300", "size": "3\"", "diameter": 65},
+      {"code": "2TXG400", "size": "4\"", "diameter": 80}
+    ]
+  },
+  {
+    "id": "8",
+    "image": ["/products/10.png"],
+    "name": {
+      "ar": "صمام كروي نحاس ( محبس هواء ) فراشة",
+      "en": "Thread Ball Valve (Butterfly handle)"
+    },
+    "description": {
+      "ar": "محبس كروي قياسي عملي وموفر للمياه يجمع هذا الصمام بين القيمة الاقتصادية والأداء العالي في ترشيد استهلاك المياه. يأتي مزودا بمقبض فراشة من الألمنيوم بلمسة كروم لامعة بتصميم مدمج وأنيق يوفر المساحة مما يجعله مثاليا للتركيب في المطابخ، الحمامات ذات المساحات المحدودة.",
+      "en": "Practical and water-saving standard ball valve combining economic value and high performance in water conservation. Equipped with a stylish chrome-finished aluminum butterfly handle, its compact and elegant design saves space, making it ideal for installation in kitchens and bathrooms with limited space."
+    },
+    "category": {
+      "ar": "محابس منزلية",
+      "en": "Domestic Valves"
+    },
+    "series": "2TXG-WH SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 20",
+      "temperatureRange": {
+        "ar": "من -20 إلى 120 درجة مئوية",
+        "en": "-20°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس - مقبض ألومنيوم",
+        "en": "Brass - Aluminum Handle"
+      }
+    },
+    "models": [
+      {"code": "2TXG-WH050", "size": "1/2\"", "diameter": 10},
+      {"code": "2TXG-WH075", "size": "3/4\"", "diameter": 15},
+      {"code": "2TXG-WH100", "size": "1\"", "diameter": 19}
+    ]
+  },
+  {
+    "id": "9",
+    "image": ["/products/11.png"],
+    "name": {
+      "ar": "صمام نحاس كروي ( بسن خارجي )",
+      "en": "Thread Ball Valve (Male G * Female G)"
+    },
+    "description": {
+      "ar": "محبس كروي قياسي يتميز بتصميم فريد يجمع بين السن الداخلي والسن الخارجي، مما يوفر مرونة استثنائية في التركيب. يوفر أداء موثوقا في ترشيد استهلاك المياه مع سهولة فائقة في التوصيل بمختلف أنواع الأنابيب والوصلات. مزود بذراع تحكم مريح لضمان سهولة الاستخدام والتحكم الدقيق.",
+      "en": "Standard ball valve featuring a unique design that combines male and female threads, providing exceptional installation flexibility. It offers reliable performance in water conservation with extreme ease of connection to various types of pipes and fittings. Equipped with an ergonomic control lever to ensure ease of use and precise control."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "2TXMG SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 20",
+      "temperatureRange": {
+        "ar": "من -20 إلى 120 درجة مئوية",
+        "en": "-20°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "2TXMG050", "size": "1/2\"", "diameter": 10},
+      {"code": "2TXMG075", "size": "3/4\"", "diameter": 15},
+      {"code": "2TXMG100", "size": "1\"", "diameter": 19}
+    ]
+  },
+  {
+    "id": "10",
+    "image": ["/products/12.png"],
+    "name": {
+      "ar": "صمام كروي نحاس ثقيل ( محبس هواء ) للاستخدامات الشاقة",
+      "en": "Thread Ball Valve (Heavy-Duty)"
+    },
+    "description": {
+      "ar": "مصمم للتحكم الدقيق في تدفق السوائل والغازات من خلال كرة داخلية للإغلاق بتقنية Full Port حيث تكون الفتحة الداخلية مساوية لقطر الأنبوب لضمان تدفق كامل وسلس دون فقدان الضغط. يتميز بهيكل متين يتحمل الاستخدامات الشاقة Heavy-Duty مع مقاومة ممتازة لدرجات الحرارة المرتفعة والمنخفضة يفضل هذا التصميم المتطور يعد خيارا موثوقا وفعالا لأنظمة المياه والغاز مع أداء ثابت وعمر تشغيلي طويل.",
+      "en": "Designed for precise control of fluid and gas flow through an internal ball with Full Port technology, where the internal opening is equal to the pipe diameter to ensure full, smooth flow without pressure loss. It features a heavy-duty robust body that withstands demanding applications with excellent resistance to high and low temperatures. This advanced design is a reliable and efficient choice for water and gas systems with consistent performance and long service life."
+    },
+    "category": {
+      "ar": "محابس كروية",
+      "en": "Ball Valves"
+    },
+    "series": "TXG SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 40",
+      "temperatureRange": {
+        "ar": "من -20 إلى 120 درجة مئوية",
+        "en": "-20°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "TXG025", "size": "1/4\"", "diameter": 10},
+      {"code": "TXG038", "size": "3/8\"", "diameter": 10},
+      {"code": "TXG050", "size": "1/2\"", "diameter": 15},
+      {"code": "TXG075", "size": "3/4\"", "diameter": 19},
+      {"code": "TXG100", "size": "1\"", "diameter": 25},
+      {"code": "TXG125", "size": "1-1/4\"", "diameter": 32},
+      {"code": "TXG150", "size": "1-1/2\"", "diameter": 40},
+      {"code": "TXG200", "size": "2\"", "diameter": 50},
+      {"code": "TXG250", "size": "2-1/2\"", "diameter": 65},
+      {"code": "TXG300", "size": "3\"", "diameter": 80}
+    ]
+  }
+]
