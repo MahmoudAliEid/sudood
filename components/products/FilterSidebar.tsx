@@ -6,10 +6,15 @@ import { Check, ChevronDown, Filter, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
+interface Category {
+    en: string
+    ar: string
+}
+
 interface FilterSidebarProps {
     className?: string
     lang: string
-    categories: string[]
+    categories: Category[]
     certifications: string[]
     series: string[]
     selectedCategories: string[]
@@ -44,27 +49,32 @@ export function FilterSidebar({
         setSelected(newSelection)
     }
 
-    const FilterSection = ({ title, options, selected, setSelected }: any) => (
+    const FilterSection = ({ title, options, selected, setSelected, isCategory }: any) => (
         <div className="mb-6">
             <h3 className="font-semibold text-foreground mb-3">{title}</h3>
             <div className="space-y-2">
-                {options.map((option: string) => (
-                    <label key={option} className="flex items-center gap-2 cursor-pointer group">
-                        <div
-                            className={cn(
-                                "w-4 h-4 rounded border flex items-center justify-center transition-colors",
-                                selected.includes(option) ? "bg-primary border-primary text-white" : "border-gray-300 group-hover:border-primary"
-                            )}
-                            onClick={(e) => {
-                                e.preventDefault()
-                                toggleFilter(selected, setSelected, option)
-                            }}
-                        >
-                            {selected.includes(option) && <Check size={12} strokeWidth={3} />}
-                        </div>
-                        <span className="text-sm text-gray-600 group-hover:text-foreground transition-colors">{option}</span>
-                    </label>
-                ))}
+                {options.map((option: any) => {
+                    const label = isCategory ? (lang === 'ar' ? option.ar : option.en) : option
+                    const value = isCategory ? option.en : option
+
+                    return (
+                        <label key={value} className="flex items-center gap-2 cursor-pointer group">
+                            <div
+                                className={cn(
+                                    "w-4 h-4 rounded border flex items-center justify-center transition-colors",
+                                    selected.includes(value) ? "bg-primary border-primary text-white" : "border-gray-300 group-hover:border-primary"
+                                )}
+                                onClick={(e) => {
+                                    e.preventDefault()
+                                    toggleFilter(selected, setSelected, value)
+                                }}
+                            >
+                                {selected.includes(value) && <Check size={12} strokeWidth={3} />}
+                            </div>
+                            <span className="text-sm text-gray-600 group-hover:text-foreground transition-colors">{label}</span>
+                        </label>
+                    )
+                })}
             </div>
         </div>
     )
@@ -97,6 +107,7 @@ export function FilterSidebar({
                         options={categories}
                         selected={selectedCategories}
                         setSelected={onCategoryChange}
+                        isCategory
                     />
                     <div className="h-px bg-gray-100 my-4" />
                     <FilterSection
@@ -146,6 +157,7 @@ export function FilterSidebar({
                                     options={categories}
                                     selected={selectedCategories}
                                     setSelected={onCategoryChange}
+                                    isCategory
                                 />
                                 <FilterSection
                                     title={lang === 'ar' ? 'الشهادات' : 'Certifications'}

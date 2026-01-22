@@ -24,11 +24,11 @@ export default function ProductsPage({ params }: { params: Promise<{ lang: strin
 
   // Extract unique filter options from products
   const uniqueCategories = useMemo(() => {
-    const categoriesSet = new Set<string>()
+    const categoriesMap = new Map<string, { en: string, ar: string }>()
     products.forEach(product => {
-      categoriesSet.add(product.category.en)
+      categoriesMap.set(product.category.en, product.category)
     })
-    return Array.from(categoriesSet).sort()
+    return Array.from(categoriesMap.values()).sort((a, b) => a.en.localeCompare(b.en))
   }, [])
 
   const uniqueCertifications = useMemo(() => {
@@ -50,11 +50,11 @@ export default function ProductsPage({ params }: { params: Promise<{ lang: strin
   // Filter products based on selected filters
   const filteredProducts = useMemo(() => {
     return products.filter(product => {
-      // Category filter
+      // Category filter (using English name as key)
       const categoryMatch = selectedCategories.length === 0 ||
         selectedCategories.includes(product.category.en)
 
-      // Certification filter (product must have at least one of the selected certifications)
+      // Certification filter
       const certificationMatch = selectedCertifications.length === 0 ||
         selectedCertifications.some(cert => product.certifications.includes(cert))
 
