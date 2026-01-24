@@ -125,4 +125,33 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(108, 61, 141, 0.2);
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    transition: background 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+    background-clip: content-box;
+  }
+
+  /* Firefox support */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(108, 61, 141, 0.3) transparent;
+  }
 }

@@ -361,5 +361,610 @@
       {"code": "TXG250", "size": "2-1/2\"", "diameter": 65},
       {"code": "TXG300", "size": "3\"", "diameter": 80}
     ]
+  },
+  {
+    "id": "11",
+    "image": ["/products/13.png"],
+    "name": {
+      "ar": "( محبس فراشة ) بسن خارجي",
+      "en": "Thread Ball Valve (Butterfly Handle - F/M)"
+    },
+    "description": {
+      "ar": "محبس كروي قياسي يتميز بتصميم فريد يجمع بين السن الداخلي والسن الخارجي، مما يوفر مرونة استثنائية في التركيب. مزود بمقبض فراشة من الألمنيوم بلمسة كروم لامعة يوفر المساحة مما يجعله مثالياً للتركيب في المساحات المحدودة.",
+      "en": "Standard ball valve featuring a unique design that combines male and female threads, providing exceptional installation flexibility. Equipped with a space-saving aluminum butterfly handle with a chrome finish, making it ideal for installation in tight spaces."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "2TXMG-WH SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 20",
+      "temperatureRange": {
+        "ar": "من -20 إلى 120 درجة مئوية",
+        "en": "-20°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس - مقبض ألومنيوم",
+        "en": "Brass - Aluminum Handle"
+      }
+    },
+    "models": [
+      {"code": "2TXMG-WH050", "size": "1/2\"", "diameter": 10},
+      {"code": "2TXMG-WH075", "size": "3/4\"", "diameter": 15},
+      {"code": "2TXMG-WH100", "size": "1\"", "diameter": 19}
+    ]
+  },
+  {
+    "id": "12",
+    "image": ["/products/14.png"],
+    "name": {
+      "ar": "صمام نحاس كروي ( بسن خارجي 2 )",
+      "en": "Thread Ball Valve (Male G * Male G)"
+    },
+    "description": {
+      "ar": "محبس كروي قياسي يتميز بتصميم سن خارجي من الجهتين (M/M)، مما يجعله سهل التركيب ويوفر إحكاماً أفضل وتوافقاً مع جميع أنظمة المياه والغاز. مزود بذراع تحكم مع طبقة من مادة الفينيل تمنح تحكماً أفضل وسهولة في الاستخدام.",
+      "en": "Standard ball valve featuring double male threads (M/M), making it easy to install, providing a better seal, and compatible with all water and gas systems. Equipped with a vinyl-coated control lever for better grip and ease of use."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "2TXMMG SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 20",
+      "temperatureRange": {
+        "ar": "من -20 إلى 120 درجة مئوية",
+        "en": "-20°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "2TXMMG050", "size": "1/2\"", "diameter": 10},
+      {"code": "2TXMMG075", "size": "3/4\"", "diameter": 15},
+      {"code": "2TXMMG100", "size": "1\"", "diameter": 19}
+    ]
+  },
+  {
+    "id": "13",
+    "image": ["/products/15.png"],
+    "name": {
+      "ar": "( محبس فراشة ) بسن خارجي 2",
+      "en": "Thread Ball Valve (Butterfly Handle - M/M)"
+    },
+    "description": {
+      "ar": "محبس كروي قياسي بسن خارجي من الجهتين، مزود بمقبض فراشة من الألمنيوم بتصميم مدمج وأنيق يوفر المساحة. مصنوع من النحاس عالي الجودة مع حلقة إحكام مزدوجة لضمان عدم التسريب.",
+      "en": "Standard ball valve with double male threads, equipped with a compact and stylish aluminum butterfly handle. Made of high-quality brass with double stem O-rings to ensure leak-free performance."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "2TXMMG-WH SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 20",
+      "temperatureRange": {
+        "ar": "من -20 إلى 120 درجة مئوية",
+        "en": "-20°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس - مقبض ألومنيوم",
+        "en": "Brass - Aluminum Handle"
+      }
+    },
+    "models": [
+      {"code": "2TXMMG-WH050", "size": "1/2\"", "diameter": 10},
+      {"code": "2TXMMG-WH075", "size": "3/4\"", "diameter": 15},
+      {"code": "2TXMMG-WH100", "size": "1\"", "diameter": 19}
+    ]
+  },
+  {
+    "id": "14",
+    "image": ["/products/16.png"],
+    "name": {
+      "ar": "( محبس فراشة ) بسن خارجي شد وصل",
+      "en": "Thread Union Ball Valve (Butterfly handle)"
+    },
+    "description": {
+      "ar": "محبس كروي مزود بوصلة سن داخلي وسن خارجي مع شد وصل (F/M)، مصمم لسهولة الفك والتركيب في الأنظمة المعقدة. يتميز بمقبض فراشة من الألمنيوم وهيكل نحاسي متين.",
+      "en": "Ball valve equipped with female/male thread and a union connection (F/M), designed for easy assembly and disassembly in complex systems. It features an aluminum butterfly handle and a robust brass body."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "2TXMIG SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 20",
+      "temperatureRange": {
+        "ar": "من -20 إلى 120 درجة مئوية",
+        "en": "-20°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس - مقبض ألومنيوم",
+        "en": "Brass - Aluminum Handle"
+      }
+    },
+    "models": [
+      {"code": "2TXMIG050", "size": "1/2\"", "diameter": 10},
+      {"code": "2TXMIG075", "size": "3/4\"", "diameter": 15}
+    ]
+  },
+  {
+    "id": "15",
+    "image": ["/products/17.png"],
+    "name": {
+      "ar": "محبس زاوية فراشة شد وصل",
+      "en": "Thread Union Ball Valve (Angle Type)"
+    },
+    "description": {
+      "ar": "صمام زاوية مزود بوصلة سن داخلي وسن خارجي مع شد وصل (F/M)، مثالي للتركيب في الزوايا حيث يتطلب الأمر تغيير اتجاه التدفق مع سهولة في الصيانة. يتميز بتصميم مدمج ومقبض فراشة.",
+      "en": "Angle ball valve equipped with female/male thread and a union connection (F/M), ideal for corner installations where flow direction change is required with easy maintenance. Features a compact design and butterfly handle."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "2TXMILG-WH SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 20",
+      "temperatureRange": {
+        "ar": "من -20 إلى 120 درجة مئوية",
+        "en": "-20°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس - مقبض ألومنيوم",
+        "en": "Brass - Aluminum Handle"
+      }
+    },
+    "models": [
+      {"code": "2TXMILG-WH050", "size": "1/2\"", "diameter": 10},
+      {"code": "2TXMILG-WH075", "size": "3/4\"", "diameter": 15}
+    ]
+  },
+  {
+    "id": "16",
+    "image": ["/products/18.png"],
+    "name": {
+      "ar": "محبس بوابة",
+      "en": "Gate Valve"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. عدم تحرك اليد أثناء صعود ونزول البوابة للفتح والإغلاق. مقبض يد مصنوع من ستانلس ستيل. بوابة صلبة من النحاس. الصمام مزود بوصلة سن داخلي (F/F) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل، إحكام أفضل، وتوافق مع جميع أنظمة المياه والغاز.",
+      "en": "Cast brass body for durability and long service life. Non-rising stem for space-saving operation. Stainless steel handwheel. Solid brass gate. Equipped with female threads (F/F) according to ISO 228-1 for easier installation, better sealing, and compatibility with water and gas systems."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "TGVG SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "80 درجة مئوية",
+        "en": "80°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "TGVG038", "size": "3/8\"", "diameter": 12.5},
+      {"code": "TGVG050", "size": "1/2\"", "diameter": 15},
+      {"code": "TGVG075", "size": "3/4\"", "diameter": 19},
+      {"code": "TGVG100", "size": "1\"", "diameter": 24},
+      {"code": "TGVG125", "size": "1-1/4\"", "diameter": 32},
+      {"code": "TGVG150", "size": "1-1/2\"", "diameter": 39},
+      {"code": "TGVG200", "size": "2\"", "diameter": 48},
+      {"code": "TGVG250", "size": "2-1/2\"", "diameter": 60},
+      {"code": "TGVG300", "size": "3\"", "diameter": 68},
+      {"code": "TGVG400", "size": "4\"", "diameter": 93}
+    ]
+  },
+  {
+    "id": "17",
+    "image": ["/products/19.png"],
+    "name": {
+      "ar": "محبس بوابة PPR",
+      "en": "PPR Gate Valve"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. عدم تحرك اليد أثناء صعود ونزول البوابة للفتح والإغلاق. مقبض يد مصنوع من ستانلس ستيل. بوابة صلبة من النحاس. مطابقة لمعيار ISO 15874 لضمان جودة ومتانة أنظمة المياه الباردة والساخنة.",
+      "en": "High-quality cast brass body for durability. Non-rising stem design. Stainless steel handle. Solid brass gate. Complies with ISO 15874 for quality and durability in hot and cold water systems."
+    },
+    "category": {
+      "ar": "محابس PPR",
+      "en": "PPR Valves"
+    },
+    "series": "TGVPPR SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "من 0 إلى 120 درجة مئوية",
+        "en": "0°C to 120°C"
+      },
+      "material": {
+        "ar": "نحاس - بولي بروبلين PPR",
+        "en": "Brass - Polypropylene PPR"
+      }
+    },
+    "models": [
+      {"code": "TGVPPR32", "size": "32mm", "diameter": 24}
+    ]
+  },
+  {
+    "id": "18",
+    "image": ["/products/20.png"],
+    "name": {
+      "ar": "بزبور ( صنبور )",
+      "en": "Hose Bibcock"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. مقبض نحاسي على شكل حرف T يرتفع أثناء الفتح. حلقة إحكام مزدوجة من مطاط نيتريل (NBR) تحيط بالساق لضمان عدم التسريب. ساق نحاسي قطعة واحدة مع اليد لضمان أداء ثابت وسهولة في التشغيل. سن خارجي مصنوع حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل، إحكام أفضل، وتوافق مع جميع أنظمة المياه.",
+      "en": "High-quality cast brass body for long-lasting durability. T-handle design. Double NBR O-rings on the stem for leak-proof performance. One-piece brass stem and handle for smooth operation. Male threads according to ISO 228-1 for easy installation and compatibility."
+    },
+    "category": {
+      "ar": "محابس خارجية",
+      "en": "Outdoor Valves"
+    },
+    "series": "HBV201 SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 20",
+      "temperatureRange": {
+        "ar": "80 درجة مئوية",
+        "en": "80°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "HBV201050", "size": "1/2\"", "diameter": 11},
+      {"code": "HBV201075", "size": "3/4\"", "diameter": 13.5}
+    ]
+  },
+  {
+    "id": "19",
+    "image": ["/products/21.png"],
+    "name": {
+      "ar": "بزبور ( صنبور ) شد وصل",
+      "en": "Hose Bibcock with Union"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. وصلة خرطوم نحاسية. مقبض نحاسي على شكل حرف T يرتفع أثناء الفتح. ساق نحاسي قطعة واحدة مع اليد لضمان أداء ثابت وسهولة في التشغيل. سن خارجي مصنوع حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل، إحكام أفضل، وتوافق مع جميع أنظمة المياه. مزود برأس بحلقات مسننة لتركيب خراطيم المياه بسهولة ومرونة وتمنع انزلاقها.",
+      "en": "Cast brass body for durability. Includes a brass hose union. T-handle design. One-piece brass stem. Male threads per ISO 228-1. Features a serrated hose tail for secure and flexible hose attachment."
+    },
+    "category": {
+      "ar": "محابس خارجية",
+      "en": "Outdoor Valves"
+    },
+    "series": "HBV202 SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 10",
+      "temperatureRange": {
+        "ar": "80 درجة مئوية",
+        "en": "80°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "HBV202050", "size": "1/2\"", "diameter": 11},
+      {"code": "HBV202075", "size": "3/4\"", "diameter": 13.5}
+    ]
+  },
+  {
+    "id": "20",
+    "image": ["/products/22.png"],
+    "name": {
+      "ar": "رداد باب نحاس (نابض)",
+      "en": "Spring Check Valve"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. قرص من البلاستيك. نابض داخلي من ستانلس ستيل S.S 304. الصمام مزود بوصلة سن داخلي (F/F) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل، إحكام أفضل، وتوافق مع جميع أنظمة المياه والغاز.",
+      "en": "High-quality cast brass body. Plastic disc. S.S 304 internal spring. F/F threads per ISO 228-1 for easy installation and reliable performance in water and gas systems."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "CVGI SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "80 درجة مئوية",
+        "en": "80°C"
+      },
+      "material": {
+        "ar": "نحاس - ستانلس ستيل",
+        "en": "Brass - Stainless Steel"
+      }
+    },
+    "models": [
+      {"code": "CVGI038", "size": "3/8\"", "diameter": 29},
+      {"code": "CVGI050", "size": "1/2\"", "diameter": 30},
+      {"code": "CVGI075", "size": "3/4\"", "diameter": 36.5},
+      {"code": "CVGI100", "size": "1\"", "diameter": 44},
+      {"code": "CVGI125", "size": "1-1/4\"", "diameter": 55.3},
+      {"code": "CVGI150", "size": "1-1/2\"", "diameter": 63},
+      {"code": "CVGI200", "size": "2\"", "diameter": 77.5},
+      {"code": "CVGI250", "size": "2-1/2\"", "diameter": 102},
+      {"code": "CVGI300", "size": "3\"", "diameter": 120},
+      {"code": "CVGI400", "size": "4\"", "diameter": 154}
+    ]
+  },
+  {
+    "id": "21",
+    "image": ["/products/23.png"],
+    "name": {
+      "ar": "رداد باب نحاس (أرجوحي)",
+      "en": "Swing Check Valve"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. مصنوع بالكامل من النحاس. الصمام مزود بوصلة سن داخلي (F/F) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل، إحكام أفضل، وتوافق مع جميع أنظمة المياه والغاز.",
+      "en": "Durable cast brass body. All-brass construction. F/F threads per ISO 228-1 for easy and secure installation in water and gas networks."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "CVG SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "80 درجة مئوية",
+        "en": "80°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "CVG050", "size": "1/2\"", "diameter": 13},
+      {"code": "CVG075", "size": "3/4\"", "diameter": 18.5},
+      {"code": "CVG100", "size": "1\"", "diameter": 23},
+      {"code": "CVG125", "size": "1-1/4\"", "diameter": 28},
+      {"code": "CVG150", "size": "1-1/2\"", "diameter": 36},
+      {"code": "CVG200", "size": "2\"", "diameter": 45},
+      {"code": "CVG250", "size": "2-1/2\"", "diameter": 56},
+      {"code": "CVG300", "size": "3\"", "diameter": 76},
+      {"code": "CVG400", "size": "4\"", "diameter": 96}
+    ]
+  },
+  {
+    "id": "22",
+    "image": ["/products/24.png"],
+    "name": {
+      "ar": "رداد باب نحاس (سن داخلي/خارجي)",
+      "en": "Spring Check Valve (F/M)"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. مصنوع بالكامل من النحاس. الصمام مزود بوصلة سن داخلي وسن خارجي مع شد وصل (F/M) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل، إحكام أفضل، وتوافق مع جميع أنظمة المياه والغاز.",
+      "en": "Cast brass body for heavy-duty use. Full brass construction. Features F/M threads per ISO 228-1 for installation flexibility and reliable operation."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "CVGMI SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "80 درجة مئوية",
+        "en": "80°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "CVGMI050", "size": "1/2\"", "diameter": 30},
+      {"code": "CVGMI075", "size": "3/4\"", "diameter": 36.5},
+      {"code": "CVGMI100", "size": "1\"", "diameter": 44}
+    ]
+  },
+  {
+    "id": "23",
+    "image": ["/products/25.png"],
+    "name": {
+      "ar": "رداد باب نحاس (سن خارجي/خارجي)",
+      "en": "Spring Check Valve (M/M)"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. مصنوع بالكامل من النحاس. الصمام مزود بوصلة سن خارجي من كلتا الجهتين (M/M) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل، إحكام أفضل، وتوافق مع جميع أنظمة المياه والغاز.",
+      "en": "Robust cast brass body. All-brass components. Double male (M/M) threads per ISO 228-1 for versatile connectivity in water and gas applications."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "CVMMI SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "80 درجة مئوية",
+        "en": "80°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "CVMMI075", "size": "3/4\"", "diameter": 36.5},
+      {"code": "CVMMI100", "size": "1\"", "diameter": 44}
+    ]
+  },
+  {
+    "id": "24",
+    "image": ["/products/26.png"],
+    "name": {
+      "ar": "شفاط نحاس شبك (قرص بلاستيك)",
+      "en": "Foot Valve (Plastic Disc)"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. قرص من البلاستيك. نابض داخلي من ستانلس ستيل S.S 304. فلتر ستانلس ستيل. الصمام مزود بوصلة سن داخلي (F) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل، إحكام أفضل، وتوافق مع جميع أنظمة المياه والغاز.",
+      "en": "Cast brass body for long service life. Plastic disc with S.S 304 spring. Stainless steel strainer. Female thread (F) per ISO 228-1 for easy suction line attachment."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "FVG SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 10",
+      "temperatureRange": {
+        "ar": "80 درجة مئوية",
+        "en": "80°C"
+      },
+      "material": {
+        "ar": "نحاس - ستانلس ستيل",
+        "en": "Brass - Stainless Steel"
+      }
+    },
+    "models": [
+      {"code": "FVG050", "size": "1/2\"", "diameter": 33},
+      {"code": "FVG075", "size": "3/4\"", "diameter": 42},
+      {"code": "FVG100", "size": "1\"", "diameter": 48},
+      {"code": "FVG125", "size": "1-1/4\"", "diameter": 59.5},
+      {"code": "FVG150", "size": "1-1/2\"", "diameter": 67.5},
+      {"code": "FVG200", "size": "2\"", "diameter": 81},
+      {"code": "FVG250", "size": "2-1/2\"", "diameter": 103},
+      {"code": "FVG300", "size": "3\"", "diameter": 111},
+      {"code": "FVG400", "size": "4\"", "diameter": 139}
+    ]
+  },
+  {
+    "id": "25",
+    "image": ["/products/27.png"],
+    "name": {
+      "ar": "شفاط نحاس شبك (فلتر نحاس)",
+      "en": "Foot Valve (Brass Filter)"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. فلتر نحاسي. الصمام مزود بوصلة سن داخلي (F) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل، إحكام أفضل، وتوافق مع جميع أنظمة المياه والغاز.",
+      "en": "Heavy-duty cast brass body. Brass strainer for durability. Female thread (F) according to ISO 228-1 for secure installation in water systems."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "2FVG SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "80 درجة مئوية",
+        "en": "80°C"
+      },
+      "material": {
+        "ar": "نحاس",
+        "en": "Brass"
+      }
+    },
+    "models": [
+      {"code": "2FVG050", "size": "1/2\"", "diameter": 38},
+      {"code": "2FVG075", "size": "3/4\"", "diameter": 44},
+      {"code": "2FVG100", "size": "1\"", "diameter": 48},
+      {"code": "2FVG125", "size": "1-1/4\"", "diameter": 57},
+      {"code": "2FVG150", "size": "1-1/2\"", "diameter": 66},
+      {"code": "2FVG200", "size": "2\"", "diameter": 77},
+      {"code": "2FVG250", "size": "2-1/2\"", "diameter": 86},
+      {"code": "2FVG300", "size": "3\"", "diameter": 111},
+      {"code": "2FVG400", "size": "4\"", "diameter": 143}
+    ]
+  },
+  {
+    "id": "26",
+    "image": ["/products/28.png"],
+    "name": {
+      "ar": "فلتر نحاس Y",
+      "en": "Brass Y Strainer"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. فلتر ستانلس ستيل. جلبة إحكام من مادة PTFE تفلون عالية المقاومة لضمان منع التسرب حتى في ظروف الضغط والحرارة العالية. الصمام مزود بوصلة سن داخلي (F/F) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل، إحكام أفضل، وتوافق مع جميع أنظمة المياه والغاز.",
+      "en": "Cast brass body for durability. Stainless steel strainer. PTFE seal for leak-proof performance under high pressure and temperature. F/F threads per ISO 228-1 for easy installation and compatibility."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "YSG SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "100 درجة مئوية",
+        "en": "100°C"
+      },
+      "material": {
+        "ar": "نحاس - ستانلس ستيل",
+        "en": "Brass - Stainless Steel"
+      }
+    },
+    "models": [
+      {"code": "YSG050", "size": "1/2\"", "diameter": 15.5},
+      {"code": "YSG075", "size": "3/4\"", "diameter": 18},
+      {"code": "YSG100", "size": "1\"", "diameter": 20},
+      {"code": "YSG125", "size": "1-1/4\"", "diameter": 26},
+      {"code": "YSG150", "size": "1-1/2\"", "diameter": 34},
+      {"code": "YSG200", "size": "2\"", "diameter": 42}
+    ]
+  },
+  {
+    "id": "27",
+    "image": ["/products/29.png"],
+    "name": {
+      "ar": "فلتر نحاس Y (ثقيل)",
+      "en": "Heavy Brass Y Strainer"
+    },
+    "description": {
+      "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة، يمنح متانة وقوة تحمل طويلة الأمد. فلتر ستانلس ستيل. جلبة إحكام من مادة PTFE تفلون عالية المقاومة لضمان منع التسرب حتى في ظروف الضغط والحرارة العالية. الصمام مزود بوصلة سن داخلي وسن خارجي مع شد وصل (F/M) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل، إحكام أفضل، وتوافق مع جميع أنظمة المياه والغاز.",
+      "en": "Heavy cast brass body. Stainless steel strainer. PTFE seal for high-pressure durability. F/M threads per ISO 228-1 for installation flexibility and reliability."
+    },
+    "category": {
+      "ar": "محابس مياه",
+      "en": "Water Valves"
+    },
+    "series": "YSGM SERIES",
+    "certifications": ["SASO", "ISO 9001"],
+    "specifications": {
+      "pressure": "PN 16",
+      "temperatureRange": {
+        "ar": "100 درجة مئوية",
+        "en": "100°C"
+      },
+      "material": {
+        "ar": "نحاس - ستانلس ستيل",
+        "en": "Brass - Stainless Steel"
+      }
+    },
+    "models": [
+      {"code": "YSGM075", "size": "3/4\"", "diameter": 18},
+      {"code": "YSGM100", "size": "1\"", "diameter": 20}
+    ]
   }
 ]

@@ -29,6 +29,11 @@ export const translations = {
       subtitle: 'SUDOOD is a Saudi brand specialized in manufacturing and assembling high-quality water and gas valves. Our products meet international and Saudi standards and are engineered for durability in GCC conditions.',
       hero: 'Certified Excellence in Water & Gas Solutions',
       heroDesc: 'Leading Saudi manufacturer of premium brass valves with international certifications',
+      badges: {
+        experience: '20+ Years Excellence',
+        quality: 'Premium Materials',
+        certified: 'SASO Certified'
+      }
     },
     // About
     about: {
@@ -136,6 +141,11 @@ export const translations = {
       subtitle: 'سدود علامة سعودية متخصصة في تصنيع وتجميع محابس المياه والصمامات وملحقاتها وفق أعلى معايير الجودة العالمية والسعودية.',
       hero: 'التميز المعتمد في حلول المياه والغاز',
       heroDesc: 'الشركة السعودية الرائدة في تصنيع محابس النحاس الفاخرة بشهادات دولية',
+      badges: {
+        experience: '20+ عاماً من التميز',
+        quality: 'مواد متميزة',
+        certified: 'معتمد من SASO'
+      }
     },
     // About
     about: {

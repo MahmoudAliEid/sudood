@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 import { ArrowRight, CheckCircle, Award, Zap, Users } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -15,7 +15,17 @@ import { ProductCard } from '@/components/products/ProductCard'
 interface TranslationStructure {
   nav: Record<string, string>
   cta: Record<string, string>
-  home: Record<string, string>
+  home: {
+    title: string
+    subtitle: string
+    hero: string
+    heroDesc: string
+    badges: {
+      experience: string
+      quality: string
+      certified: string
+    }
+  }
   about: Record<string, string>
   services: Record<string, string>
   products: Record<string, string>
@@ -28,6 +38,37 @@ interface TranslationStructure {
   footer: Record<string, string>
 }
 
+const FloatingBadge = ({
+  icon: Icon,
+  text,
+  className,
+  delay = 0,
+  isRTL = false
+}: {
+  icon: any
+  text: string
+  className: string
+  delay?: number
+  isRTL?: boolean
+}) => (
+  <motion.div
+    initial={{ opacity: 0, scale: 0.8, y: 20 }}
+    animate={{ opacity: 1, scale: 1, y: 0 }}
+    transition={{
+      delay,
+      duration: 0.8,
+      ease: "easeOut"
+    }}
+    whileHover={{ y: -5, transition: { duration: 0.2 } }}
+    className={`absolute z-30 hidden lg:flex items-center gap-3 px-4 py-3 bg-white/80 backdrop-blur-md border border-white/50 rounded-2xl shadow-xl shadow-primary/5 ${className}`}
+  >
+    <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
+      <Icon className="w-5 h-5" />
+    </div>
+    <span className="text-sm font-bold text-foreground whitespace-nowrap">{text}</span>
+  </motion.div>
+)
+
 export function HomePageClient({ lang: initialLang }: { lang: Language }) {
   const [currentLang, setCurrentLang] = useState<Language>(initialLang)
   const router = useRouter()
@@ -36,119 +77,114 @@ export function HomePageClient({ lang: initialLang }: { lang: Language }) {
   const t = translations[validLang] as TranslationStructure
   const isRTL = validLang === 'ar'
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.1, delayChildren: 0.2 },
+      transition: { staggerChildren: 0.15, delayChildren: 0.3 },
     },
   }
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
   }
 
   return (
     <div
-      className={`min-h-screen bg-white ${isRTL ? 'rtl' : 'ltr'}`}
+      className={`min-h-screen bg-[#fafafa] selection:bg-primary/20 ${isRTL ? 'rtl font-cairo' : 'ltr font-sans'}`}
       dir={isRTL ? 'rtl' : 'ltr'}
     >
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-32 pb-24 bg-gradient-to-br from-gray-50 via-white to-purple-50/30">
-        <div className="absolute inset-0 bg-grid-gray-100/50 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10" />
+      <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden">
+        {/* Dynamic Background Elements */}
+        <div className="absolute inset-0 pointer-events-none -z-10">
+          <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/5 rounded-full blur-[120px] animate-pulse" />
+          <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-500/5 rounded-full blur-[120px]" />
+          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03]" />
+        </div>
+
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <motion.div
-            className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
             {/* Text Content */}
-            <motion.div variants={itemVariants} className="space-y-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
-                <CheckCircle className="w-4 h-4 text-primary" />
-                <span className="text-sm font-semibold text-primary">
-                  Certified • SASO • UL • CSA • FM • ISO9001
+            <motion.div variants={itemVariants} className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 rounded-full mb-8 border border-primary/20">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                <span className="text-xs font-bold text-primary uppercase tracking-widest">
+                  Certified Excellence • SASO • UL
                 </span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.1] tracking-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-8xl font-black text-foreground mb-8 leading-[1.05] tracking-tight">
                 {t?.home?.title || 'SUDOOD — High-Quality Water & Gas Valves'}
               </h1>
 
-              <p className="text-xl text-gray-600 leading-relaxed max-w-xl">
-                {t?.home?.subtitle || 'SUDOOD is a Saudi brand specialized in manufacturing and assembling high-quality water and gas valves. Our products meet international and Saudi standards and are engineered for durability in GCC conditions.'}
+              <p className="text-lg md:text-xl text-gray-500 mb-10 leading-relaxed max-w-xl">
+                {t?.home?.subtitle || 'SUDOOD is a Saudi brand specialized in manufacturing and assembling high-quality water and gas valves. Our products meet international and Saudi standards.'}
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="flex flex-wrap gap-4 pt-4">
                 <Link
                   href={`/${validLang}/contact`}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-xl font-semibold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30"
+                  className="px-8 py-5 bg-primary text-white rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-primary/40 hover:-translate-y-1 transition-all active:scale-[0.98] flex items-center gap-3"
                 >
                   {t?.cta?.requestQuote || 'Request Quote'}
-                  <ArrowRight className="w-5 h-5" />
+                  <ArrowRight className={`w-5 h-5 ${isRTL ? 'rotate-180' : ''}`} />
                 </Link>
                 <Link
                   href={`/${validLang}/products`}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-gray-200 text-foreground rounded-xl font-semibold hover:border-primary hover:bg-primary/5 transition-all"
+                  className="px-8 py-5 bg-white border border-gray-200 text-foreground rounded-2xl font-bold text-lg hover:bg-gray-50 hover:border-primary/30 transition-all active:scale-[0.98]"
                 >
                   {t?.cta?.viewProducts || 'View Products'}
                 </Link>
               </div>
             </motion.div>
 
-            {/* Hero Image */}
-            <motion.div variants={itemVariants} className="relative">
-              {/* Decorative background elements */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-purple-50 to-transparent rounded-3xl -z-20" />
+            {/* Hero Image Section */}
+            <motion.div variants={itemVariants} className="relative group">
+              {/* Floating Decorative Blobs */}
+              <div className="absolute -inset-10 bg-gradient-to-tr from-primary/10 via-transparent to-purple-500/10 rounded-[4rem] blur-3xl -z-10 animate-pulse" />
 
-              {/* Main image container with animated border */}
-              <div className="relative aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white via-gray-50 to-gray-100 p-1 shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-purple-400/10 to-transparent opacity-50 animate-pulse" />
-                <div className="relative w-full h-full bg-white rounded-3xl p-8 overflow-hidden">
-                  <Image
-                    src="/heroImage.png"
-                    alt="SUDOOD Valves"
-                    fill
-                    className="object-fit drop-shadow-2xl z-10"
-                    priority
-                  />
-                  {/* Subtle grid pattern overlay */}
-                  <div className="absolute inset-0 bg-grid-gray-200/30 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-                </div>
+              {/* Main Image Container */}
+              <div className="relative rounded-[3.5rem] overflow-hidden border border-white/60 bg-white shadow-[0_32px_128px_-16px_rgba(0,0,0,0.1)] p-8 backdrop-blur-sm transition-transform duration-700 hover:scale-[1.02]">
+                <div className="absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-gray-100 -z-10" />
+                <Image
+                  src="/heroImage.png"
+                  alt="SUDOOD Valves"
+                  width={800}
+                  height={800}
+                  className="w-full h-auto drop-shadow-[0_20px_60px_rgba(0,0,0,0.15)] group-hover:rotate-1 transition-transform duration-700"
+                  priority
+                />
               </div>
 
-              {/* Floating decorative elements */}
-              <motion.div
-                className="absolute -bottom-8 -right-8 w-40 h-40 bg-gradient-to-br from-primary/30 to-purple-400/20 rounded-full blur-3xl -z-10"
-                animate={{
-                  y: [0, -20, 0],
-                  scale: [1, 1.1, 1]
-                }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
+              {/* Floating Metrics Cards */}
+              <FloatingBadge
+                icon={Award}
+                text={t.home.badges.experience}
+                className={isRTL ? "top-10 -right-12" : "top-10 -left-12"}
+                delay={0.6}
+                isRTL={isRTL}
               />
-              <motion.div
-                className="absolute -top-8 -left-8 w-40 h-40 bg-gradient-to-br from-purple-300/30 to-primary/20 rounded-full blur-3xl -z-10"
-                animate={{
-                  y: [0, 20, 0],
-                  scale: [1, 1.15, 1]
-                }}
-                transition={{
-                  duration: 7,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: 0.5
-                }}
+              <FloatingBadge
+                icon={Zap}
+                text={t.home.badges.quality}
+                className={isRTL ? "bottom-12 -left-8" : "bottom-12 -right-8"}
+                delay={0.8}
+                isRTL={isRTL}
               />
-
-              {/* Accent dots */}
-              <div className="absolute top-4 right-4 w-3 h-3 bg-primary/40 rounded-full blur-sm" />
-              <div className="absolute bottom-8 left-8 w-2 h-2 bg-purple-400/40 rounded-full blur-sm" />
+              <FloatingBadge
+                icon={CheckCircle}
+                text={t.home.badges.certified}
+                className={isRTL ? "top-1/2 -left-16 transform -translate-y-1/2" : "top-1/2 -right-16 transform -translate-y-1/2"}
+                delay={1}
+                isRTL={isRTL}
+              />
             </motion.div>
           </motion.div>
         </div>
