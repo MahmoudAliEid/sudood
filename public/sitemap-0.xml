@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Sitemap 0 - Main Marketing Pages -->
+  <url>
+    <loc>https://sudood.sa/ar</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://sudood.sa/ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sudood.sa/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sudood.sa/ar"/>
+  </url>
+  <url>
+    <loc>https://sudood.sa/en</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sudood.sa/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://sudood.sa/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sudood.sa/ar"/>
+  </url>
+  <url>
+    <loc>https://sudood.sa/ar/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://sudood.sa/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sudood.sa/en/about"/>
+  </url>
+  <url>
+    <loc>https://sudood.sa/en/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sudood.sa/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://sudood.sa/ar/about"/>
+  </url>
+</urlset>
