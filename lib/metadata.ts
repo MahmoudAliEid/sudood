@@ -39,7 +39,7 @@ export const metadata: Record<string, Metadata> = {
       locale: "en_US",
       images: [
         {
-          url: `${baseUrl}/og-image.jpg`,
+          url: `${baseUrl}/sudoodLogo.png`,
           width: 1200,
           height: 630,
           alt: "SUDOOD Valves - Quality & Excellence",
@@ -50,15 +50,15 @@ export const metadata: Record<string, Metadata> = {
       card: "summary_large_image",
       title: "SUDOOD | Saudi Valve Manufacturer",
       description: "Premium brass valves for water and gas. SASO & UL certified.",
-      images: [`${baseUrl}/twitter-image.jpg`],
+      images: [`${baseUrl}/sudoodLogo.png`],
     },
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
-        { url: "/logo.png", sizes: "32x32", type: "image/png" },
+        { url: "/sudoodLogoFill.png", sizes: "32x32", type: "image/png" },
       ],
       apple: [
-        { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+        { url: "/sudoodLogoFill.png", sizes: "180x180", type: "image/png" },
       ],
     },
   },
@@ -97,7 +97,7 @@ export const metadata: Record<string, Metadata> = {
       locale: "ar_AR",
       images: [
         {
-          url: `${baseUrl}/og-image-ar.jpg`,
+          url: `${baseUrl}/sudoodLogo.png`,
           width: 1200,
           height: 630,
           alt: "محابس سدود - الجودة والتميز",
@@ -108,15 +108,15 @@ export const metadata: Record<string, Metadata> = {
       card: "summary_large_image",
       title: "سدود | مصنع صمامات سعودي",
       description: "محابس نحاسية فاخرة للمياه والغاز. معتمدة من ساسو و UL.",
-      images: [`${baseUrl}/twitter-image-ar.jpg`],
+      images: [`${baseUrl}/sudoodLogo.png`],
     },
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
-        { url: "sudoodLogoFill.png", sizes: "32x32", type: "image/png" },
+        { url: "/sudoodLogoFill.png", sizes: "32x32", type: "image/png" },
       ],
       apple: [
-        { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+        { url: "/sudoodLogoFill.png", sizes: "180x180", type: "image/png" },
       ],
     },
   },
