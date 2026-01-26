@@ -142,7 +142,7 @@ export const translations = {
       hero: 'التميز المعتمد في حلول المياه والغاز',
       heroDesc: 'الشركة السعودية الرائدة في تصنيع محابس النحاس الفاخرة بشهادات دولية',
       badges: {
-        experience: '20+ عاماً من التميز',
+        experience: '+20 عاماً من التميز',
         quality: 'مواد متميزة',
         certified: 'معتمد من SASO'
       }

@@ -41,19 +41,24 @@ export function ContactForm({ lang }: ContactFormProps) {
     setError('')
 
     try {
-      const mailtoLink = `mailto:info@sudood.sa?subject=SUDOOD%20-%20Quote%20Request%20from%20${encodeURIComponent(
-        formData.contact
-      )}&body=${encodeURIComponent(
-        `Company: ${formData.company}\\nContact Person: ${formData.contact}\\nEmail: ${formData.email}\\nPhone: ${formData.phone}\\nProduct: ${formData.product}\\nQuantity: ${formData.quantity}\\nProject Address: ${formData.address}\\nNotes: ${formData.notes}`
-      )}`
+      // Map ContactForm data to QuoteAPI expected structure
+      const apiData = {
+        name: formData.contact,
+        company: formData.company,
+        email: formData.email,
+        phone: formData.phone,
+        productName: formData.product,
+        productId: 'CONTACT_FORM',
+        category: 'General Inquiry',
+        series: formData.address ? `Address: ${formData.address}` : '',
+        quantity: formData.quantity || '1',
+        notes: formData.notes,
+      }
 
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('/api/send-quote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      }).catch(() => {
-        window.location.href = mailtoLink
-        return null
+        body: JSON.stringify(apiData),
       })
 
       if (response && response.ok) {
@@ -69,14 +74,21 @@ export function ContactForm({ lang }: ContactFormProps) {
           notes: '',
         })
         setTimeout(() => setSubmitted(false), 5000)
-      } else if (response) {
-        setError(t.contact.form.error)
+      } else {
+        const errorData = await response.json()
+        throw new Error(errorData.error || t.contact.form.error)
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error('Form error:', err)
+      setError(err.message || t.contact.form.error)
+
+      // Fallback to mailto if API fails
       const mailtoLink = `mailto:info@sudood.sa?subject=SUDOOD%20-%20Quote%20Request&body=${encodeURIComponent(
-        `Company: ${formData.company}\\nContact: ${formData.contact}\\nEmail: ${formData.email}\\nPhone: ${formData.phone}\\nProduct: ${formData.product}\\nQuantity: ${formData.quantity}`
+        `Company: ${formData.company}\nContact: ${formData.contact}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nProduct: ${formData.product}\nQuantity: ${formData.quantity}\nNotes: ${formData.notes}`
       )}`
+
+      // Only trigger mailto if the user actually wants to try another way
+      // But for now we just show the error and offer the link in console or just fallback
       window.location.href = mailtoLink
     } finally {
       setIsLoading(false)

@@ -154,11 +154,11 @@ export function HomePageClient({ lang: initialLang }: { lang: Language }) {
               <div className="relative rounded-[3.5rem] overflow-hidden border border-white/60 bg-white shadow-[0_32px_128px_-16px_rgba(0,0,0,0.1)] p-8 backdrop-blur-sm transition-transform duration-700 hover:scale-[1.02]">
                 <div className="absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-gray-100 -z-10" />
                 <Image
-                  src="/heroImage.png"
+                  src="/products/30.png"
                   alt="SUDOOD Valves"
                   width={800}
                   height={800}
-                  className="w-full h-auto drop-shadow-[0_20px_60px_rgba(0,0,0,0.15)] group-hover:rotate-1 transition-transform duration-700"
+                  className="w-full h-auto drop-shadow-[0_20px_60px_rgba(0,0,0,0.15)] group-hover:scale-105 transition-transform duration-700"
                   priority
                 />
               </div>

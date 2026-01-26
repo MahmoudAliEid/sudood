@@ -103,80 +103,86 @@ export default function ProductDetailsPage({ params }: { params: Promise<{ lang:
                 {/* Hero Section */}
                 <ProductHero product={product} lang={lang} onQuoteClick={() => setIsQuoteModalOpen(true)} />
 
-                {/* Details Content Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-24 mb-24" id="specs">
-                    {/* Left Column: Specs */}
-                    <div className="lg:col-span-2">
-                        <TechSpecs specs={specs} lang={lang} />
-
-                        <div className="mt-12">
-                            <h3 className="text-2xl font-bold mb-6">
-                                {lang === 'ar' ? translations.ar.products.applications : translations.en.products.applications}
-                            </h3>
-                            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                {[
-                                    { en: translations.en.products.waterDistribution, ar: translations.ar.products.waterDistribution },
-                                    { en: translations.en.products.waterTreatment, ar: translations.ar.products.waterTreatment },
-                                    { en: translations.en.products.pumpStations, ar: translations.ar.products.pumpStations },
-                                    { en: translations.en.products.fireProtection, ar: translations.ar.products.fireProtection }
-                                ].map(app => (
-                                    <li key={app.en} className="flex items-center gap-3 bg-gray-50 p-4 rounded-lg">
-                                        <span className="w-2 h-2 bg-primary rounded-full" />
-                                        <span className="text-gray-700">{lang === 'ar' ? app.ar : app.en}</span>
-                                    </li>
-                                ))}
-                            </ul>
+                {/* Detailed Specifications Section */}
+                {product.technicalSpecs && product.performanceSpecs ? (
+                    <div className="mb-24" id="specs">
+                        <DetailedSpecs
+                            technical={lang === 'ar' ? product.technicalSpecs.ar : product.technicalSpecs.en}
+                            performance={product.performanceSpecs}
+                            lang={lang}
+                        />
+                    </div>
+                ) : (
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-24 mb-24" id="specs">
+                        {/* Fallback for products without detailed JSON structure */}
+                        <div className="lg:col-span-2">
+                            <TechSpecs specs={specs} lang={lang} />
                         </div>
                     </div>
+                )}
 
-                    {/* Right Column: Sticky Contact/Download */}
-                    <div className="lg:col-span-1">
-                        <div className="sticky top-24 space-y-6">
-                            <div className="bg-primary/5 border border-primary/20 rounded-xl p-6">
-                                <h4 className="font-bold text-lg mb-2">{lang === 'ar' ? translations.ar.products.needHelp : translations.en.products.needHelp}</h4>
-                                <p className="text-sm text-muted-foreground mb-4">
-                                    {lang === 'ar' ? translations.ar.products.needHelpDesc : translations.en.products.needHelpDesc}
-                                </p>
-                                <button
-                                    onClick={() => setIsQuoteModalOpen(true)}
-                                    className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
-                                >
-                                    {lang === 'ar' ? translations.ar.products.contactSales : translations.en.products.contactSales}
+                {/* Components & Drawings Grid */}
+                {product.components && product.sectionalDrawing && (
+                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-24">
+                        <ComponentsTable components={product.components} lang={lang} />
+                        <EngineeringDrawing src={product.sectionalDrawing} lang={lang} />
+                    </div>
+                )}
+
+                {/* Dimensions Table */}
+                {product.models && product.models.length > 0 && (
+                    <div className="mb-24">
+                        <DimensionsTable models={product.models} lang={lang} />
+                    </div>
+                )}
+
+                {/* Downloads & Support Section */}
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-24">
+                    <div className="bg-primary/5 border border-primary/20 rounded-xl p-8">
+                        <h4 className="font-bold text-xl mb-3">{lang === 'ar' ? translations.ar.products.needHelp : translations.en.products.needHelp}</h4>
+                        <p className="text-muted-foreground mb-6 leading-relaxed">
+                            {lang === 'ar' ? translations.ar.products.needHelpDesc : translations.en.products.needHelpDesc}
+                        </p>
+                        <button
+                            onClick={() => setIsQuoteModalOpen(true)}
+                            className="w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 active:scale-[0.98]"
+                        >
+                            {lang === 'ar' ? translations.ar.products.contactSales : translations.en.products.contactSales}
+                        </button>
+                    </div>
+
+                    <div className="lg:col-span-2 border rounded-xl p-8">
+                        <h4 className="font-bold text-xl mb-6">{lang === 'ar' ? translations.ar.products.downloads : translations.en.products.downloads}</h4>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {[
+                                { en: translations.en.products.technicalDatasheet, ar: translations.ar.products.technicalDatasheet },
+                                { en: translations.en.products.installationManual, ar: translations.ar.products.installationManual },
+                                { en: translations.en.products.bimObjects, ar: translations.ar.products.bimObjects }
+                            ].map(file => (
+                                <button key={file.en} className="flex items-center gap-4 w-full text-left p-4 hover:bg-gray-50 rounded-xl border border-transparent hover:border-gray-200 transition-all group">
+                                    <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-primary/10 group-hover:text-primary transition-colors">
+                                        <svg className="w-5 h-5 text-gray-500 group-hover:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                        </svg>
+                                    </div>
+                                    <span className="font-medium text-gray-700 group-hover:text-primary">{lang === 'ar' ? file.ar : file.en}</span>
                                 </button>
-                            </div>
-
-                            <div className="border rounded-xl p-6">
-                                <h4 className="font-bold text-lg mb-4">{lang === 'ar' ? translations.ar.products.downloads : translations.en.products.downloads}</h4>
-                                <div className="space-y-3">
-                                    {[
-                                        { en: translations.en.products.technicalDatasheet, ar: translations.ar.products.technicalDatasheet },
-                                        { en: translations.en.products.installationManual, ar: translations.ar.products.installationManual },
-                                        { en: translations.en.products.bimObjects, ar: translations.ar.products.bimObjects }
-                                    ].map(file => (
-                                        <button key={file.en} className="flex items-center gap-3 w-full text-left text-sm text-gray-600 hover:text-primary transition-colors p-2 hover:bg-gray-50 rounded-lg group">
-                                            <svg className="w-5 h-5 text-gray-400 group-hover:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                            </svg>
-                                            {lang === 'ar' ? file.ar : file.en}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
 
                 {/* Certifications Row */}
-                <div className="border-t border-b py-12 mb-16">
-                    <h3 className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-8">
+                <div className="border-t border-b py-16 mb-20 bg-gray-50/50 rounded-[3rem]">
+                    <h3 className="text-center text-sm font-bold text-muted-foreground uppercase tracking-widest mb-10">
                         {lang === 'ar' ? translations.ar.products.certifiedBy : translations.en.products.certifiedBy}
                     </h3>
-                    <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-                        {/* Placeholders for Logos - In real app, use Image component */}
-                        {['SASO', 'UL', 'FM Approved', 'CSA', 'ISO 9001', 'WRAS'].map((cert) => (
-                            <div key={cert} className="flex flex-col items-center gap-2 group cursor-pointer text-center">
-                                <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-full border-2 border-gray-200 flex items-center justify-center bg-gray-50 group-hover:border-primary/50 group-hover:bg-white transition-all shadow-sm group-hover:shadow-md">
-                                    <span className="font-bold text-xs lg:text-sm text-gray-400 group-hover:text-primary">{cert}</span>
+                    <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                        {/* Use dynamic certifications based on product data if available, or fallback */}
+                        {(product.certifications || ['SASO', 'ISO 9001']).map((cert) => (
+                            <div key={cert} className="flex flex-col items-center gap-3 group cursor-pointer text-center hover:-translate-y-1 transition-transform duration-300">
+                                <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-2xl bg-white border border-gray-100 flex items-center justify-center shadow-sm group-hover:shadow-xl group-hover:border-primary/20 transition-all">
+                                    <span className="font-bold text-sm lg:text-base text-gray-400 group-hover:text-primary px-2">{cert}</span>
                                 </div>
                             </div>
                         ))}
@@ -184,11 +190,11 @@ export default function ProductDetailsPage({ params }: { params: Promise<{ lang:
                 </div>
 
                 {/* Related Products */}
-                <div className="border-t pt-16">
-                    <h2 className="text-3xl font-bold mb-8">
+                <div>
+                    <h2 className="text-3xl font-bold mb-10">
                         {lang === 'ar' ? translations.ar.products.relatedProducts : translations.en.products.relatedProducts}
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {relatedProducts.map(p => (
                             <ProductCard key={p.id} product={p} lang={lang} />
                         ))}

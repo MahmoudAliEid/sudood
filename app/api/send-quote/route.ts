@@ -27,8 +27,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create transporter using environment variables
-    // For production, use proper email service like SendGrid, AWS SES, or similar
-    const transporter = nodemailer.createTransport({
+    const smtpConfig = {
       host: process.env.EMAIL_HOST || 'smtp.gmail.com',
       port: parseInt(process.env.EMAIL_PORT || '587'),
       secure: process.env.EMAIL_SECURE === 'true' || false,
@@ -36,7 +35,16 @@ export async function POST(request: NextRequest) {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASSWORD,
       },
+    }
+
+    console.log('Attempting to send email with config:', {
+      host: smtpConfig.host,
+      port: smtpConfig.port,
+      user: smtpConfig.auth.user ? '***' : 'missing',
+      pass: smtpConfig.auth.pass ? '***' : 'missing',
     })
+
+    const transporter = nodemailer.createTransport(smtpConfig)
 
     // Email to business
     const businessEmailHtml = `
