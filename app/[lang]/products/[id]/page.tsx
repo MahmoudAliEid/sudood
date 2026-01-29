@@ -5,6 +5,10 @@ import { motion } from "framer-motion"
 import { ProductHero } from "@/components/products/details/ProductHero"
 import { TechSpecs } from "@/components/products/details/TechSpecs"
 import { QuoteModal } from "@/components/products/details/QuoteModal"
+import { DetailedSpecs } from "@/components/products/details/DetailedSpecs"
+import { ComponentsTable } from "@/components/products/details/ComponentsTable"
+import { EngineeringDrawing } from "@/components/products/details/EngineeringDrawing"
+import { DimensionsTable } from "@/components/products/details/DimensionsTable"
 import { ProductCard, Product } from "@/components/products/ProductCard"
 import { translations } from "@/lib/i18n"
 
@@ -137,7 +141,7 @@ export default function ProductDetailsPage({ params }: { params: Promise<{ lang:
                 )}
 
                 {/* Downloads & Support Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-24">
+                {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-24">
                     <div className="bg-primary/5 border border-primary/20 rounded-xl p-8">
                         <h4 className="font-bold text-xl mb-3">{lang === 'ar' ? translations.ar.products.needHelp : translations.en.products.needHelp}</h4>
                         <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -170,7 +174,7 @@ export default function ProductDetailsPage({ params }: { params: Promise<{ lang:
                             ))}
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Certifications Row */}
                 <div className="border-t border-b py-16 mb-20 bg-gray-50/50 rounded-[3rem]">

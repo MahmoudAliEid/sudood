@@ -71,21 +71,24 @@ export function ProductHero({ product, lang, onQuoteClick }: ProductHeroProps) {
                         {lang === 'ar' ? 'معتمد من قبل:' : 'Certified by:'}
                     </p>
                     <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
-                        <div className="relative h-12 w-12 grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100">
-                            <Image src="/333.png" alt="Certification" fill className="object-contain" />
-                        </div>
-                        <div className="relative h-12 w-20 grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100">
-                            <Image src="/C-US-UL-listed.webp" alt="UL Listed" fill className="object-contain" />
-                        </div>
-                        <div className="relative h-12 w-16 grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100">
-                            <Image src="/CSA-C-US-Mark.jpg" alt="CSA Mark" fill className="object-contain" />
-                        </div>
-                        <div className="relative h-12 w-16 grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100">
-                            <Image src="/FM Kapak.jpg" alt="FM Approved" fill className="object-contain" />
-                        </div>
-                        <div className="relative h-12 w-32 grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100">
-                            <Image src="/QAssurance-logos-4.png" alt="QAssurance" fill className="object-contain" />
-                        </div>
+                        {product.certifications.map((cert) => {
+                            const logoMap: Record<string, { src: string; alt: string; className: string }> = {
+                                "ISO 9001": { src: "/333.png", alt: "ISO 9001", className: "h-12 w-12" },
+                                "UL": { src: "/C-US-UL-listed.webp", alt: "UL Listed", className: "h-12 w-20" },
+                                "CSA": { src: "/CSA-C-US-Mark.jpg", alt: "CSA Mark", className: "h-12 w-16" },
+                                "FM": { src: "/FM Kapak.jpg", alt: "FM Approved", className: "h-12 w-16" },
+                                "SASO": { src: "/QAssurance-logos-4.png", alt: "SASO", className: "h-12 w-32" },
+                            };
+
+                            const logo = logoMap[cert];
+                            if (!logo) return null;
+
+                            return (
+                                <div key={cert} className={`relative ${logo.className} grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100`}>
+                                    <Image src={logo.src} alt={logo.alt} fill className="object-contain" />
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </motion.div>

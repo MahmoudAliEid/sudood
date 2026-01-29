@@ -15,7 +15,7 @@ export async function generateMetadata({
     title: lang === 'en' ? 'About Us - SUDOOD' : 'من نحن - سدود',
     description: lang === 'en'
       ? 'Learn about SUDOOD, a Saudi manufacturer of high-quality water and gas valves with international certifications.'
-      : 'تعرف على سدود، شركة سعودية متخصصة في تصنيع محابس وصمامات مياه وغاز عالية الجودة.',
+      : 'تعرف على سدود، شركة سعودية متخصصة في تصنيع محابس و صمامات مياه و غاز عالية الجودة.',
   }
 }
 

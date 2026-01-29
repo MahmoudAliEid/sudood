@@ -100,7 +100,7 @@ export default function ProductsPage({ params }: { params: Promise<{ lang: strin
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
               {lang === 'ar'
-                ? 'صمامات مياه عالية الجودة مصممة للموثوقية والأداء العالي للمشاريع السكنية والتجارية والصناعية'
+                ? 'صمامات مياه عالية الجودة مصممة للموثوقية والأداء العالي للمشاريع السكنية و التجارية و الصناعية'
                 : 'High-quality water valves engineered for reliability and performance for residential, commercial, and industrial projects.'}
             </p>
           </motion.div>

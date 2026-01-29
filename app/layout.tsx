@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ["latin"], variable: '--font-sans' });
 const cairo = Cairo({ subsets: ["arabic"], variable: '--font-cairo' });
 
 export const metadata: Metadata = {
-  title: 'SUDOOD - محابس وصمامات مياه وغاز بجودة سعودية',
-  description: 'SUDOOD - Saudi Manufacturer of High-Quality Water and Gas Valves | سدود - محابس وصمامات مياه عالية الجودة',
+  title: 'SUDOOD - محابس و صمامات مياه و غاز بجودة سعودية',
+  description: 'SUDOOD - Saudi Manufacturer of High-Quality Water and Gas Valves | سدود - محابس و صمامات مياه عالية الجودة',
   generator: 'Next.js',
   keywords: ['water valves', 'gas valves', 'محابس مياه', 'صمامات غاز', 'SUDOOD', 'SASO', 'Saudi manufacturer'],
   authors: [{ name: 'SUDOOD' }],

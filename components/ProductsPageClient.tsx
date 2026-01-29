@@ -84,7 +84,7 @@ export function ProductsPageClient({ lang: initialLang }: { lang: Language }) {
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
               {validLang === 'ar'
-                ? 'مجموعة شاملة من محابس وصمامات مياه وغاز عالية الجودة'
+                ? 'مجموعة شاملة من محابس و صمامات مياه و غاز عالية الجودة'
                 : 'A comprehensive range of high-quality water and gas valves'}
             </p>
           </motion.div>

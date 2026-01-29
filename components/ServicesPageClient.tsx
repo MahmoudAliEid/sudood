@@ -54,7 +54,7 @@ export function ServicesPageClient({ lang: initialLang }: { lang: Language }) {
       icon: Settings,
       title: validLang === 'ar' ? 'التصنيع والتجميع المخصص' : 'Custom Manufacturing & Assembly',
       desc: validLang === 'ar'
-        ? 'تصنيع وتجميع محابس وصمامات وفق مواصفات المشروع الدقيقة مع ضمان الجودة العالية'
+        ? 'تصنيع و تجميع محابس و صمامات وفق مواصفات المشروع الدقيقة مع ضمان الجودة العالية'
         : 'Custom manufacturing and assembly of valves according to precise project specifications with high quality assurance',
       features: [
         validLang === 'ar' ? 'تصميم حسب الطلب' : 'Custom design',
@@ -66,7 +66,7 @@ export function ServicesPageClient({ lang: initialLang }: { lang: Language }) {
       icon: Truck,
       title: validLang === 'ar' ? 'التوريد للمقاولين والمتاجر' : 'Supply to Contractors & Retailers',
       desc: validLang === 'ar'
-        ? 'توريد منتجاتنا لمقاولين ومتاجر السباكة والمشاريع العامة والصناعية'
+        ? 'توريد منتجاتنا لمقاولين و متاجر السباكة و المشاريع العامة و الصناعية'
         : 'Supply to contractors, plumbing retailers, and public and industrial projects',
       features: [
         validLang === 'ar' ? 'توصيل سريع' : 'Fast delivery',
@@ -78,7 +78,7 @@ export function ServicesPageClient({ lang: initialLang }: { lang: Language }) {
       icon: Award,
       title: validLang === 'ar' ? 'الاختبار والشهادات' : 'Quality Testing & Certification',
       desc: validLang === 'ar'
-        ? 'اختبارات وفحص جودة ومطابقة شهادات دولية (SASO, UL, CSA, FM, ISO9001)'
+        ? 'اختبارات و فحص جودة و مطابقة شهادات دولية (SASO, UL, CSA, FM, ISO9001)'
         : 'Quality testing, inspection, and international certification compliance (SASO, UL, CSA, FM, ISO9001)',
       features: [
         validLang === 'ar' ? 'اختبارات صارمة' : 'Rigorous testing',
@@ -90,7 +90,7 @@ export function ServicesPageClient({ lang: initialLang }: { lang: Language }) {
       icon: Headphones,
       title: validLang === 'ar' ? 'الدعم الفني والتكامل الذكي' : 'Technical Support & Smart Integration',
       desc: validLang === 'ar'
-        ? 'دعم تقني متخصص وتركيب للمنتجات الذكية والتكاملات المتقدمة'
+        ? 'دعم تقني متخصص و تركيب للمنتجات الذكية و التكاملات المتقدمة'
         : 'Specialized technical support and installation for smart products and advanced integrations',
       features: [
         validLang === 'ar' ? 'دعم 24/7' : '24/7 support',
@@ -147,7 +147,7 @@ export function ServicesPageClient({ lang: initialLang }: { lang: Language }) {
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               {validLang === 'ar'
-                ? 'نقدم مجموعة شاملة من الخدمات المتخصصة لدعم مشاريعك بأعلى معايير الجودة والاحترافية'
+                ? 'نقدم مجموعة شاملة من الخدمات المتخصصة لدعم مشاريعك بأعلى معايير الجودة و الاحترافية'
                 : 'We provide a comprehensive range of specialized services to support your projects with the highest standards of quality and professionalism'}
             </p>
           </motion.div>
@@ -343,7 +343,7 @@ export function ServicesPageClient({ lang: initialLang }: { lang: Language }) {
             </h2>
             <p className="text-xl text-purple-100 max-w-2xl mx-auto leading-relaxed">
               {validLang === 'ar'
-                ? 'تواصل معنا اليوم لمناقشة متطلبات مشروعك والحصول على استشارة مجانية'
+                ? 'تواصل معنا اليوم لمناقشة متطلبات مشروعك و الحصول على استشارة مجانية'
                 : 'Contact us today to discuss your project requirements and get a free consultation'}
             </p>
             <Link

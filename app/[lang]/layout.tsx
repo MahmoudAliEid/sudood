@@ -43,7 +43,7 @@ export default async function Layout({
         "@type": "Organization",
         "name": isArabic ? "سدود" : "SUDOOD",
         "description": isArabic
-            ? "علامة تجارية سعودية متخصصة في تصنيع وتجميع محابس المياه والصمامات عالية الجودة"
+            ? "علامة تجارية سعودية متخصصة في تصنيع و تجميع محابس المياه و الصمامات عالية الجودة"
             : "Saudi brand specialized in manufacturing and assembling high-quality water and gas valves",
         "url": `${baseUrl}/${validLang}`,
         "logo": `${baseUrl}/logo.png`,

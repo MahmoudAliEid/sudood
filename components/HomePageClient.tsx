@@ -96,7 +96,7 @@ export function HomePageClient({ lang: initialLang }: { lang: Language }) {
       dir={isRTL ? 'rtl' : 'ltr'}
     >
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden">
+      <section className="relative py-20  overflow-hidden">
         {/* Dynamic Background Elements */}
         <div className="absolute inset-0 pointer-events-none -z-10">
           <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/5 rounded-full blur-[120px] animate-pulse" />
@@ -153,14 +153,17 @@ export function HomePageClient({ lang: initialLang }: { lang: Language }) {
               {/* Main Image Container */}
               <div className="relative rounded-[3.5rem] overflow-hidden border border-white/60 bg-white shadow-[0_32px_128px_-16px_rgba(0,0,0,0.1)] p-8 backdrop-blur-sm transition-transform duration-700 hover:scale-[1.02]">
                 <div className="absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-gray-100 -z-10" />
-                <Image
+                {/* <Image
                   src="/products/30.png"
                   alt="SUDOOD Valves"
                   width={800}
                   height={800}
                   className="w-full h-auto drop-shadow-[0_20px_60px_rgba(0,0,0,0.15)] group-hover:scale-105 transition-transform duration-700"
                   priority
-                />
+                /> */}
+                <div className='w-full h-[300px]'>
+
+                </div>
               </div>
 
               {/* Floating Metrics Cards */}
@@ -208,7 +211,7 @@ export function HomePageClient({ lang: initialLang }: { lang: Language }) {
             <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6" />
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               {validLang === 'ar'
-                ? 'جودة رائدة والابتكار في تصنيع الصمامات'
+                ? 'جودة رائدة و الابتكار في تصنيع الصمامات'
                 : 'Leading quality and innovation in valve manufacturing'}
             </p>
           </motion.div>
@@ -323,7 +326,7 @@ export function HomePageClient({ lang: initialLang }: { lang: Language }) {
             </h2>
             <p className="text-xl text-purple-100 max-w-2xl mx-auto leading-relaxed">
               {validLang === 'ar'
-                ? 'تواصل معنا اليوم لمناقشة متطلبات مشروعك والحصول على عرض سعر تنافسي'
+                ? 'تواصل معنا اليوم لمناقشة متطلبات مشروعك و الحصول على عرض سعر تنافسي'
                 : 'Contact us today to discuss your project requirements and get a competitive quote'}
             </p>
             <Link

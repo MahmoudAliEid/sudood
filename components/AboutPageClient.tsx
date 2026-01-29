@@ -57,7 +57,7 @@ export function AboutPageClient({ lang: initialLang }: { lang: Language }) {
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               {validLang === 'ar'
-                ? 'شركة سعودية رائدة في تصنيع وتوريد محابس وصمامات المياه والغاز بأعلى معايير الجودة العالمية'
+                ? 'شركة سعودية رائدة في تصنيع و توريد محابس و صمامات المياه والغاز بأعلى معايير الجودة العالمية'
                 : 'A leading Saudi company in manufacturing and supplying water and gas valves with the highest international quality standards'}
             </p>
           </motion.div>
@@ -82,7 +82,7 @@ export function AboutPageClient({ lang: initialLang }: { lang: Language }) {
               <div className="w-24 h-1 bg-primary rounded-full mb-8" />
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 {validLang === 'ar'
-                  ? 'سدود شركة سعودية متخصصة في توريد وتصنيع محابس وصمامات مياه وغاز من مواد عالية النقاء (نحاس برونز) بمعايير جودة عالمية.'
+                  ? 'سدود شركة سعودية متخصصة في توريد و تصنيع محابس و صمامات مياه و غاز من مواد عالية النقاء (نحاس برونز) بمعايير جودة عالمية.'
                   : 'SUDOOD is a Saudi company specializing in supplying and manufacturing high-quality water and gas valves from high-purity brass materials with international quality standards.'}
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -166,17 +166,17 @@ export function AboutPageClient({ lang: initialLang }: { lang: Language }) {
               {
                 icon: Trophy,
                 title: validLang === 'ar' ? 'التميز' : 'Excellence',
-                desc: validLang === 'ar' ? 'نسعى للتميز في كل جوانب عملنا ونلتزم بأعلى معايير الجودة' : 'We strive for excellence in every aspect and commit to the highest quality standards',
+                desc: validLang === 'ar' ? 'نسعى للتميز في كل جوانب عملنا و نلتزم بأعلى معايير الجودة' : 'We strive for excellence in every aspect and commit to the highest quality standards',
               },
               {
                 icon: Handshake,
                 title: validLang === 'ar' ? 'الأمانة' : 'Integrity',
-                desc: validLang === 'ar' ? 'نتعامل بأمانة وشفافية مع عملائنا وشركائنا' : 'We deal honestly and transparently with our customers and partners',
+                desc: validLang === 'ar' ? 'نتعامل بأمانة و شفافية مع عملائنا وشركائنا' : 'We deal honestly and transparently with our customers and partners',
               },
               {
                 icon: Lightbulb,
                 title: validLang === 'ar' ? 'الابتكار' : 'Innovation',
-                desc: validLang === 'ar' ? 'نواصل الابتكار والتطور المستمر لتلبية احتياجات السوق' : 'We continue to innovate and evolve to meet market needs',
+                desc: validLang === 'ar' ? 'نواصل الابتكار و التطور المستمر لتلبية احتياجات السوق' : 'We continue to innovate and evolve to meet market needs',
               },
             ].map((value, idx) => {
               const IconComponent = value.icon

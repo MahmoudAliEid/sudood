@@ -37,6 +37,33 @@ export interface Product {
             en: string;
         };
     };
+    technicalSpecs?: {
+        ar: string[];
+        en: string[];
+    };
+    performanceSpecs?: {
+        label: {
+            ar: string;
+            en: string;
+        };
+        value: string | {
+            ar: string;
+            en: string;
+        };
+    }[];
+    components?: {
+        no: number;
+        part: {
+            ar: string;
+            en: string;
+        };
+        material: {
+            ar: string;
+            en: string;
+        };
+        qty: number;
+    }[];
+    sectionalDrawing?: string;
     models?: {
         code: string;
         size: string;
