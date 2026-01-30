@@ -41,55 +41,48 @@ export function ContactForm({ lang }: ContactFormProps) {
     setError('')
 
     try {
-      // Map ContactForm data to QuoteAPI expected structure
-      const apiData = {
-        name: formData.contact,
-        company: formData.company,
-        email: formData.email,
-        phone: formData.phone,
-        productName: formData.product,
-        productId: 'CONTACT_FORM',
-        category: 'General Inquiry',
-        series: formData.address ? `Address: ${formData.address}` : '',
-        quantity: formData.quantity || '1',
-        notes: formData.notes,
-      }
+      const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+201158531550"
+      
+      const message = lang === 'ar'
+        ? `*رسالة تواصل جديدة*\n\n` +
+          `*الاسم:* ${formData.contact}\n` +
+          `*الشركة:* ${formData.company}\n` +
+          `*الايميل:* ${formData.email}\n` +
+          `*الهاتف:* ${formData.phone}\n` +
+          `*المنتج:* ${formData.product || 'غير محدد'}\n` +
+          `*الكمية:* ${formData.quantity || '1'}\n` +
+          `*العنوان:* ${formData.address || 'غير محدد'}\n\n` +
+          `*الرسالة/الملاحظات:* ${formData.notes}`
+        : `*New Contact Message*\n\n` +
+          `*Name:* ${formData.contact}\n` +
+          `*Company:* ${formData.company}\n` +
+          `*Email:* ${formData.email}\n` +
+          `*Phone:* ${formData.phone}\n` +
+          `*Product:* ${formData.product || 'Not specified'}\n` +
+          `*Quantity:* ${formData.quantity || '1'}\n` +
+          `*Address:* ${formData.address || 'Not specified'}\n\n` +
+          `*Message/Notes:* ${formData.notes}`;
 
-      const response = await fetch('/api/send-quote', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(apiData),
+      const encodedMessage = encodeURIComponent(message)
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
+
+      window.open(whatsappUrl, '_blank')
+
+      setSubmitted(true)
+      setFormData({
+        company: '',
+        contact: '',
+        email: '',
+        phone: '',
+        product: '',
+        quantity: '',
+        address: '',
+        notes: '',
       })
-
-      if (response && response.ok) {
-        setSubmitted(true)
-        setFormData({
-          company: '',
-          contact: '',
-          email: '',
-          phone: '',
-          product: '',
-          quantity: '',
-          address: '',
-          notes: '',
-        })
-        setTimeout(() => setSubmitted(false), 5000)
-      } else {
-        const errorData = await response.json()
-        throw new Error(errorData.error || t.contact.form.error)
-      }
+      setTimeout(() => setSubmitted(false), 5000)
     } catch (err: any) {
-      console.error('Form error:', err)
-      setError(err.message || t.contact.form.error)
-
-      // Fallback to mailto if API fails
-      const mailtoLink = `mailto:info@sudood.sa?subject=SUDOOD%20-%20Quote%20Request&body=${encodeURIComponent(
-        `Company: ${formData.company}\nContact: ${formData.contact}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nProduct: ${formData.product}\nQuantity: ${formData.quantity}\nNotes: ${formData.notes}`
-      )}`
-
-      // Only trigger mailto if the user actually wants to try another way
-      // But for now we just show the error and offer the link in console or just fallback
-      window.location.href = mailtoLink
+      console.error('WhatsApp redirect error:', err)
+      setError(lang === 'ar' ? 'فشل الانتقال إلى واتساب' : 'Failed to redirect to WhatsApp')
     } finally {
       setIsLoading(false)
     }

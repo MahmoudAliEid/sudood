@@ -39,51 +39,70 @@ export function QuoteModal({ isOpen, onClose, productName, productData, lang }: 
         setIsSubmitting(true)
 
         try {
-            // Send email via API
-            const response = await fetch('/api/send-quote', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            })
+            const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+201158531550" // Fallback or instructions
+            
+            const message = lang === 'ar' 
+                ? `*طلب عرض سعر جديد*\n\n` +
+                  `*المنتج:* ${formData.productName}\n` +
+                  `*الفئة:* ${formData.category}\n` +
+                  `*السلسلة:* ${formData.series || 'N/A'}\n` +
+                  `*الكمية:* ${formData.quantity}\n\n` +
+                  `*بيانات العميل:*\n` +
+                  `*الاسم:* ${formData.name}\n` +
+                  `*الشركة:* ${formData.company || 'N/A'}\n` +
+                  `*الايميل:* ${formData.email}\n` +
+                  `*الهاتف:* ${formData.phone}\n\n` +
+                  `*ملاحظات:* ${formData.notes || 'لا يوجد'}`
+                : `*New Quote Request*\n\n` +
+                  `*Product:* ${formData.productName}\n` +
+                  `*Category:* ${formData.category}\n` +
+                  `*Series:* ${formData.series || 'N/A'}\n` +
+                  `*Quantity:* ${formData.quantity}\n\n` +
+                  `*Customer Info:*\n` +
+                  `*Name:* ${formData.name}\n` +
+                  `*Company:* ${formData.company || 'N/A'}\n` +
+                  `*Email:* ${formData.email}\n` +
+                  `*Phone:* ${formData.phone}\n\n` +
+                  `*Notes:* ${formData.notes || 'None'}`;
 
-            if (response.ok) {
-                console.log("Quote request sent successfully:", formData)
-                setIsSubmitting(false)
-                setIsSuccess(true)
+            const encodedMessage = encodeURIComponent(message)
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
 
-                setTimeout(() => {
-                    setIsSuccess(false)
-                    onClose()
-                    setFormData({
-                        name: "",
-                        company: "",
-                        email: "",
-                        phone: "",
-                        productName: typeof productName === 'string' ? productName : (lang === 'ar' ? productName.ar : productName.en),
-                        productId: productData?.id || "",
-                        category: productData?.category ? (lang === 'ar' ? productData.category.ar : productData.category.en) : "",
-                        series: productData?.series || "",
-                        quantity: "1",
-                        notes: ""
-                    })
-                }, 2000)
-            } else {
-                throw new Error('Failed to send quote')
-            }
-        } catch (error) {
-            console.error("Error sending quote:", error)
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank')
+
             setIsSubmitting(false)
-            alert('Failed to send quote. Please try again.')
+            setIsSuccess(true)
+
+            setTimeout(() => {
+                setIsSuccess(false)
+                onClose()
+                setFormData({
+                    name: "",
+                    company: "",
+                    email: "",
+                    phone: "",
+                    productName: typeof productName === 'string' ? productName : (lang === 'ar' ? productName.ar : productName.en),
+                    productId: productData?.id || "",
+                    category: productData?.category ? (lang === 'ar' ? productData.category.ar : productData.category.en) : "",
+                    series: productData?.series || "",
+                    quantity: "1",
+                    notes: ""
+                })
+            }, 2000)
+        } catch (error) {
+            console.error("Error sending quote to WhatsApp:", error)
+            setIsSubmitting(false)
+            alert(lang === 'ar' ? 'حدث خطأ أثناء الانتقال إلى واتساب. يرجى المحاولة مرة أخرى.' : 'Error opening WhatsApp. Please try again.')
         }
     }
 
     return (
-        <AnimatePresence>
+        <AnimatePresence >
             {isOpen && (
                 <>
                     <motion.div
+                    
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -94,9 +113,9 @@ export function QuoteModal({ isOpen, onClose, productName, productData, lang }: 
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                        className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
+                        className="fixed overflow-y-auto inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
                     >
-                        <div className="bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden pointer-events-auto">
+                        <div className="bg-white rounded-2xl shadow-2xl w-full max-w-lg  pointer-events-auto h-[90vh] overflow-y-auto ">
                             {/* Header */}
                             <div className="bg-primary px-6 py-4 flex items-center justify-between text-primary-foreground">
                                 <h3 className="font-bold text-lg">
@@ -108,7 +127,7 @@ export function QuoteModal({ isOpen, onClose, productName, productData, lang }: 
                             </div>
 
                             {/* Body */}
-                            <div className="p-6">
+                            <div className="p-6 ">
                                 {isSuccess ? (
                                     <div className="text-center py-12">
                                         <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -134,7 +153,7 @@ export function QuoteModal({ isOpen, onClose, productName, productData, lang }: 
                                             </div>
                                         )}
 
-                                        <div className="grid grid-cols-2 gap-4">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             <div className="space-y-2">
                                                 <label className="text-sm font-medium">{lang === 'ar' ? 'اسمك' : 'Name'}</label>
                                                 <input
@@ -156,7 +175,7 @@ export function QuoteModal({ isOpen, onClose, productName, productData, lang }: 
                                             </div>
                                         </div>
 
-                                        <div className="grid grid-cols-2 gap-4">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             <div className="space-y-2">
                                                 <label className="text-sm font-medium">{lang === 'ar' ? 'البريد الإلكتروني' : 'Email'}</label>
                                                 <input

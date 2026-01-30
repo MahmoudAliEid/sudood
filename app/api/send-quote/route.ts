@@ -26,14 +26,31 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Validate required environment variables
+    const emailUser = process.env.EMAIL_USER
+    const emailPass = process.env.EMAIL_PASSWORD
+
+    if (!emailUser || !emailPass) {
+      console.error('Email configuration missing: EMAIL_USER or EMAIL_PASSWORD not set in environment.')
+      return NextResponse.json(
+        {
+          error: 'Email service is not configured.',
+          details: process.env.NODE_ENV === 'development'
+            ? 'Missing EMAIL_USER or EMAIL_PASSWORD in .env.local. See .env.local.example for setup instructions.'
+            : 'Please contact the administrator.'
+        },
+        { status: 500 }
+      )
+    }
+
     // Create transporter using environment variables
     const smtpConfig = {
       host: process.env.EMAIL_HOST || 'smtp.gmail.com',
       port: parseInt(process.env.EMAIL_PORT || '587'),
       secure: process.env.EMAIL_SECURE === 'true' || false,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASSWORD,
+        user: emailUser,
+        pass: emailPass,
       },
     }
 
