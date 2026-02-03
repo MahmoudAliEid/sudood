@@ -4,6 +4,7 @@
     "image": [
       "/products/5.png"
     ],
+    "sectionalDrawing": "/products/green-1.png",
     "name": {
       "ar": "محبس سكين خارجي شد وصل نحاس",
       "en": "PPR Ball Valve"
@@ -244,6 +245,7 @@
         "diameter": 49.3
       }
     ]
+
   },
   {
     "id": "2",
@@ -707,6 +709,7 @@
     ]
   },
   {
+    
     "id": "4",
     "image": [
       "/products/8.png"
@@ -1325,10 +1328,11 @@
       }
     ]
   },
+
   {
     "id": "7",
     "image": [
-      "/products/9.png"
+      "/products/10.png"
     ],
     "name": {
       "ar": "صمام كروي نحاس اقتصادي ( محبس هواء )",
@@ -1482,7 +1486,7 @@
         "qty": 1
       }
     ],
-    "sectionalDrawing": "/products/9-1.png",
+    "sectionalDrawing": "/products/10-1.png",
     "models": [
       {
         "code": "2TXG050",
@@ -1688,7 +1692,7 @@
         "qty": 1
       }
     ],
-    "sectionalDrawing": "/products/10-1.png",
+    "sectionalDrawing": "/products/11-1.png",
     "models": [
       {
         "code": "2TXG-WH050",
@@ -1864,7 +1868,7 @@
         "qty": 1
       }
     ],
-    "sectionalDrawing": "/products/11-1.png",
+    "sectionalDrawing": "/products/12-1.png",
     "models": [
       {
         "code": "2TXMG050",
@@ -1883,10 +1887,11 @@
       }
     ]
   },
+    
   {
     "id": "10",
     "image": [
-      "/products/12.png"
+      "/products/9.png"
     ],
     "name": {
       "ar": "صمام كروي نحاس ثقيل ( محبس هواء ) للاستخدامات الشاقة",
@@ -2066,7 +2071,7 @@
         "qty": 1
       }
     ],
-    "sectionalDrawing": "/products/12-1.png",
+    "sectionalDrawing": "/products/9-1.png",
     "models": [
       {
         "code": "TXG025",
@@ -2125,6 +2130,7 @@
       }
     ]
   },
+  // Error
   {
     "id": "11",
     "image": [
@@ -2327,6 +2333,7 @@
       }
     ]
   },
+  // Error
   {
     "id": "12",
     "image": [
@@ -2517,6 +2524,7 @@
       }
     ]
   },
+  // Error
   {
     "id": "13",
     "image": [
@@ -2707,6 +2715,7 @@
       }
     ]
   },
+  // Error
   {
     "id": "14",
     "image": [
@@ -2896,6 +2905,7 @@
       }
     ]
   },
+  // Error
   {
     "id": "15",
     "image": [
@@ -3168,6 +3178,7 @@
         }
       }
     ],
+    "sectionalDrawing":"/products/18-1.png",
     "models": [
       {
         "code": "TGVG038",
@@ -3226,6 +3237,7 @@
     "image": [
       "/products/19.png"
     ],
+    "sectionalDrawing":"/products/19-1.png",
     "name": {
       "ar": "محبس بوابة PPR",
       "en": "PPR Gate Valve"
@@ -3343,6 +3355,7 @@
         }
       }
     ],
+    "sectionalDrawing":"/products/20-1.png",
     "models": [
       {
         "code": "HBV201050",
@@ -3361,6 +3374,7 @@
     "image": [
       "/products/21.png"
     ],
+    "sectionalDrawing":"/products/21-1.png",
     "name": {
       "ar": "بزبور ( صنبور ) شد وصل",
       "en": "Hose Bibcock with Union"
@@ -3433,6 +3447,7 @@
     "image": [
       "/products/22.png"
     ],
+    "sectionalDrawing":"/products/22-1.png",
     "name": {
       "ar": "رداد باب نحاس (نابض)",
       "en": "Spring Check Valve"
@@ -3561,6 +3576,7 @@
     "image": [
       "/products/23.png"
     ],
+    "sectionalDrawing":"/products/23-1.png",
     "name": {
       "ar": "رداد باب نحاس (أرجوحي)",
       "en": "Swing Check Valve"
@@ -3680,6 +3696,7 @@
     "image": [
       "/products/24.png"
     ],
+    "sectionalDrawing":"/products/24-1.png",
     "name": {
       "ar": "رداد باب نحاس (سن داخلي/خارجي)",
       "en": "Spring Check Valve (F/M)"
@@ -3757,6 +3774,7 @@
     "image": [
       "/products/25.png"
     ],
+    "sectionalDrawing":"/products/25-1.png",
     "name": {
       "ar": "رداد باب نحاس (سن خارجي/خارجي)",
       "en": "Spring Check Valve (M/M)"
@@ -3827,6 +3845,7 @@
     "image": [
       "/products/26.png"
     ],
+    "sectionalDrawing":"/products/26-1.png",
     "name": {
       "ar": "شفاط نحاس شبك (قرص بلاستيك)",
       "en": "Foot Valve (Plastic Disc)"
@@ -3932,6 +3951,7 @@
     "image": [
       "/products/27.png"
     ],
+    "sectionalDrawing":"/products/27-1.png",
     "name": {
       "ar": "شفاط نحاس شبك (فلتر نحاس)",
       "en": "Foot Valve (Brass Filter)"
@@ -4111,7 +4131,8 @@
         "size": "2\"",
         "diameter": 42
       }
-    ]
+    ],
+    "sectionalDrawing": "/products/28-1.png"
   },
   {
     "id": "27",
@@ -4149,6 +4170,7 @@
         "Female x Male (F/M) union threads according to ISO 228-1 standard"
       ]
     },
+    "sectionalDrawing": "/products/29-1.png",
     "performanceSpecs": [
       {
         "label": {

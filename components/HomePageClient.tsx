@@ -151,8 +151,8 @@ export function HomePageClient({ lang: initialLang }: { lang: Language }) {
               <div className="absolute -inset-10 bg-gradient-to-tr from-primary/10 via-transparent to-purple-500/10 rounded-[4rem] blur-3xl -z-10 animate-pulse" />
 
               {/* Main Image Container */}
-              <div className="relative rounded-[3.5rem] overflow-hidden border border-white/60 bg-white shadow-[0_32px_128px_-16px_rgba(0,0,0,0.1)] p-8 backdrop-blur-sm transition-transform duration-700 hover:scale-[1.02]">
-                <div className="absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-gray-100 -z-10" />
+              <div className="relative rounded-[3.5rem] overflow-hidden  ">
+                <div className="absolute  -z-10" />
                 {/* <Image
                   src="/products/30.png"
                   alt="SUDOOD Valves"
@@ -177,7 +177,7 @@ export function HomePageClient({ lang: initialLang }: { lang: Language }) {
               <FloatingBadge
                 icon={Zap}
                 text={t.home.badges.quality}
-                className={isRTL ? "bottom-12 -left-8" : "bottom-12 -right-8"}
+                className={isRTL ? "bottom-15 -left-8" : "bottom-15 -right-8"}
                 delay={0.8}
                 isRTL={isRTL}
               />

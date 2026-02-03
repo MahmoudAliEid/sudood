@@ -55,8 +55,8 @@ export function Navbar({ lang }: NavbarProps) {
     return (
         <motion.header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                ? "bg-white/98 backdrop-blur-lg shadow-sm border-b border-gray-100"
-                : "bg-white/95 backdrop-blur-sm"
+                ? "bg-primary/95 backdrop-blur-lg shadow-lg border-b border-primary-foreground/10"
+                : "bg-primary backdrop-blur-sm"
                 }`}
             initial={{ y: -100 }}
             animate={{ y: 0 }}
@@ -67,7 +67,7 @@ export function Navbar({ lang }: NavbarProps) {
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <Link href={`/${currentLang}`} className="relative z-50 flex items-center gap-3 group">
-                        <div className="relative w-28 bg-primary h-16 rounded-lg shadow-sm border border-gray-100 overflow-hidden transition-transform group-hover:scale-105">
+                        <div className="relative w-28  h-20 rounded-lg  overflow-hidden transition-transform group-hover:scale-105 ">
                             <Image
                                 src="/sudoodLogoFill.png"
                                 alt="SUDOOD Logo"
@@ -76,9 +76,9 @@ export function Navbar({ lang }: NavbarProps) {
                                 priority
                             />
                         </div>
-                        <span className="text-foreground text-2xl font-bold tracking-tight group-hover:text-primary transition-colors">
+                        {/* <span className="text-white text-2xl font-bold tracking-tight group-hover:text-primary-foreground/90 transition-colors">
                             SUDOOD
-                        </span>
+                        </span> */}
                     </Link>
 
                     {/* Desktop Nav */}
@@ -87,7 +87,10 @@ export function Navbar({ lang }: NavbarProps) {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className={`px-4 ${currentPath === link.href ? 'text-gray-700 text-primary bg-primary/5' : 'text-gray-700 hover:text-primary hover:bg-primary/5'} py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-primary/5 rounded-lg transition-all`}
+                                className={`px-4 py-2 text-sm font-medium rounded-lg  transition-all duration-200 ${currentPath === link.href
+                                    ? '!text-primary bg-white shadow-sm'
+                                    : 'text-white hover:bg-white/10'
+                                    }`}
                             >
                                 {link.name}
                             </Link>
@@ -100,31 +103,31 @@ export function Navbar({ lang }: NavbarProps) {
                             variant="ghost"
                             size="sm"
                             onClick={handleLangChange}
-                            className="rounded-lg gap-2 hover:bg-gray-100 hover:text-primary text-gray-700 font-medium"
+                            className="rounded-lg gap-2 text-primary-foreground/90 hover:bg-white/10 hover:text-white font-medium transition-colors"
                         >
                             <Globe size={16} />
                             <span className="text-sm">{currentLang === 'en' ? 'العربية' : 'English'}</span>
                         </Button>
                         <Link href={`/${currentLang}/contact`}>
-                            <Button className="bg-primary hover:bg-primary/90 text-white rounded-lg px-6 py-2 shadow-sm font-medium">
+                            <Button className="bg-white hover:bg-gray-50 text-primary rounded-lg px-6 py-2 shadow-sm font-bold transition-transform hover:scale-105 active:scale-95">
                                 {t.cta.requestQuote}
                             </Button>
                         </Link>
                     </div>
 
                     {/* Mobile Toggle */}
-                    <div className="lg:hidden relative z-50 flex items-center gap-3">
+                    <div className="lg:hidden relative z-50 flex items-center gap-3 text-white">
                         <Button
                             variant="ghost"
                             size="icon"
                             onClick={handleLangChange}
-                            className="rounded-lg hover:bg-gray-100"
+                            className="rounded-lg hover:bg-white/10 text-white"
                         >
                             <span className="text-xs font-bold">{currentLang === 'en' ? 'ع' : 'EN'}</span>
                         </Button>
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className="p-2 text-foreground hover:bg-gray-100 rounded-lg transition-colors"
+                            className="p-2 hover:bg-white/10 rounded-lg transition-colors text-white"
                         >
                             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
@@ -135,7 +138,7 @@ export function Navbar({ lang }: NavbarProps) {
                         <motion.div
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            className="absolute top-full left-0 right-0 bg-white border-b shadow-lg p-6 lg:hidden"
+                            className="absolute top-full left-0 right-0 bg-primary border-t border-primary-foreground/10 shadow-xl p-6 lg:hidden"
                         >
                             <div className="flex flex-col gap-2">
                                 {navLinks.map((link) => (
@@ -143,13 +146,16 @@ export function Navbar({ lang }: NavbarProps) {
                                         key={link.href}
                                         href={link.href}
                                         onClick={() => setIsMobileMenuOpen(false)}
-                                        className="text-base font-medium text-gray-700 hover:text-primary hover:bg-primary/5 py-3 px-4 rounded-lg transition-all"
+                                        className={`text-base font-medium py-3 px-4 rounded-lg transition-all ${currentPath === link.href
+                                            ? 'bg-white text-primary'
+                                            : 'text-white hover:bg-white/10'
+                                            }`}
                                     >
                                         {link.name}
                                     </Link>
                                 ))}
                                 <Link href={`/${currentLang}/contact`} onClick={() => setIsMobileMenuOpen(false)}>
-                                    <Button className="w-full mt-4 bg-primary text-white rounded-lg py-3 font-medium">
+                                    <Button className="w-full mt-4 bg-white text-primary hover:bg-gray-50 rounded-lg py-3 font-bold shadow-sm">
                                         {t.cta.requestQuote}
                                     </Button>
                                 </Link>

@@ -9,13 +9,14 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>
 }): Promise<Metadata> {
   const { lang: paramLang } = await params
-  const lang = (paramLang as Language) || 'en'
+  const validLangs: Language[] = ['en', 'ar']
+  const lang = validLangs.includes(paramLang as Language) ? (paramLang as Language) : 'en'
   const t = translations[lang]
 
   return {
     title: t.home.title,
     description: t.home.subtitle,
-    keywords: lang === 'en' 
+    keywords: lang === 'en'
       ? ['water valves', 'gas valves', 'SUDOOD', 'Saudi manufacturer', 'SASO', 'quality valves']
       : ['محابس مياه', 'صمامات غاز', 'سدود', 'تصنيع سعودي', 'جودة عالية'],
     openGraph: {
