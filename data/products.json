@@ -245,7 +245,6 @@
         "diameter": 49.3
       }
     ]
-
   },
   {
     "id": "2",
@@ -709,7 +708,6 @@
     ]
   },
   {
-    
     "id": "4",
     "image": [
       "/products/8.png"
@@ -1328,7 +1326,6 @@
       }
     ]
   },
-
   {
     "id": "7",
     "image": [
@@ -1887,7 +1884,6 @@
       }
     ]
   },
-    
   {
     "id": "10",
     "image": [
@@ -2130,47 +2126,44 @@
       }
     ]
   },
-  // Error
   {
     "id": "11",
     "image": [
       "/products/13.png"
     ],
     "name": {
-      "ar": "صمام كروي نحاس ثقيل ( بسن خارجي ) للاستخدامات الشاقة",
-      "en": "THREAD BALL VALVE (Heavy-Duty) Male x Female"
+      "ar": "( محبس فراشة ) بسن خارجي",
+      "en": "THREAD BALL VALVE"
     },
     "description": {
-      "ar": "صمم للتحكم الدقيق في تدفق السوائل والغازات من خلال كرة داخلية للإغلاق بتقنية Full Port يتميز بتصميم فريد يجمع بين السن الداخلي والسن الخارجي (F/M)، مما يوفر مرونة استثنائية في التركيب. يتميز بهيكل متين يتحمل الاستخدامات الشاقة Heavy-Duty مع مقاومة ممتازة لدرجات الحرارة المرتفعة والمنخفضة.",
-      "en": "Designed for precise control of fluid and gas flow through an internal ball with Full Port technology. Features a unique design combining male and female threads (F/M), providing exceptional installation flexibility. It features a heavy-duty robust body that withstands demanding applications with excellent resistance to high and low temperatures."
+      "ar": "محبس كروي قياسي ( Regular Port ) مصنوع من النحاس عالي الجودة. يتميز بمقبض فراشة من الألمنيوم بلمسة كروم لامعة. يوفر أداءً موثوقاً وعمر تشغيلي طويل. مثالي للاستخدامات في المساحات المحدودة بفضل تصميمه المدمج.",
+      "en": "Regular Port Brass Ball Valve made of high-quality forged brass. Features a chrome-plated aluminum butterfly handle. Provides reliable performance and long service life. Ideal for use in tight spaces due to its compact design."
     },
     "category": {
       "ar": "محابس كروية",
       "en": "Ball Valves"
     },
-    "series": "TXM SERIES",
+    "series": "2TXMG-WH SERIES",
     "certifications": [
       "SASO",
       "ISO 9001"
     ],
     "technicalSpecs": {
       "ar": [
-        "تقنية فول بورت Full Port",
-        "جسم مصنوع من النحاس عالي الجودة المشغل بالضغط",
-        "تصميم للساق الذي يربط المقبض مع الكرة الداخلية يمنع انفصالها حتى في ظروف الضغط العالي",
-        "صامولة نحاسية اسفل المقبض",
-        "حلقة إحكام من مطاط نيتريل (NBR) لضمان إحكام كامل ضد التسرب",
-        "ذراع تحكم مع طبقة من مادة الفينيل تمنح تحكماً أفضل و سهولة في الاستخدام",
-        "الصمام مزود بوصلة سن داخلي و سن خارجي (F/M) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل ، إحكام أفضل ، و توافق مع جميع أنظمة المياه و الغاز"
+        "فتحة قياسية (Regular Port)",
+        "جسم مصنوع من النحاس عالي الجودة المشكل بالضغط",
+        "تصميم للساق الذي يربط المقبض مع الكرة الداخلية يمنع انفصالها",
+        "حلقة إحكام مزدوجة من مطاط نيتريل (NBR) لضمان عدم التسريب",
+        "مقبض فراشة من الألمنيوم بلمسة كروم لامعة",
+        "صمام مزود بوصلة سن داخلي / خارجي (F/M) حسب معيار ISO 228-1"
       ],
       "en": [
-        "Full Port Technology",
+        "Regular Port",
         "Body made of high-quality forged brass",
-        "Stem design ensures internal ball connection even under high pressure",
-        "Brass nut under the handle",
-        "NBR sealing ring ensures leak-proof performance",
-        "Vinyl-coated control lever provides better grip",
-        "Female x Male (F/M) threads according to ISO 228-1 for easy installation and compatibility"
+        "Stem design prevents blowout",
+        "Double NBR O-rings for leak protection",
+        "Chrome-plated aluminum butterfly handle",
+        "Female/Male (F/M) threads according to ISO 228-1"
       ]
     },
     "performanceSpecs": [
@@ -2179,7 +2172,7 @@
           "ar": "أقصى ضغط تشغيل",
           "en": "Max Operating Pressure"
         },
-        "value": "PN 40"
+        "value": "PN 20"
       },
       {
         "label": {
@@ -2196,8 +2189,8 @@
       {
         "no": 1,
         "part": {
-          "ar": "الجسم",
-          "en": "Body"
+          "ar": "الجسم 1",
+          "en": "Body 1"
         },
         "material": {
           "ar": "نحاس",
@@ -2209,11 +2202,11 @@
         "no": 2,
         "part": {
           "ar": "جلبة الإغلاق",
-          "en": "Shut-off Bushing"
+          "en": "Seat"
         },
         "material": {
-          "ar": "PTFE (تفلون)",
-          "en": "PTFE (Teflon)"
+          "ar": "PTFE",
+          "en": "PTFE"
         },
         "qty": 2
       },
@@ -2233,28 +2226,16 @@
         "no": 4,
         "part": {
           "ar": "حلقة إحكام",
-          "en": "Sealing Ring"
+          "en": "O-Ring"
         },
         "material": {
-          "ar": "مطاط نيتريل (NBR)",
+          "ar": "NBR",
           "en": "NBR"
         },
-        "qty": 1
+        "qty": 2
       },
       {
         "no": 5,
-        "part": {
-          "ar": "صامولة الساق",
-          "en": "Stem Nut"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 6,
         "part": {
           "ar": "الساق",
           "en": "Stem"
@@ -2266,7 +2247,7 @@
         "qty": 1
       },
       {
-        "no": 7,
+        "no": 6,
         "part": {
           "ar": "صامولة المقبض",
           "en": "Handle Nut"
@@ -2278,31 +2259,19 @@
         "qty": 1
       },
       {
-        "no": 8,
-        "part": {
-          "ar": "جلبة",
-          "en": "Bushing"
-        },
-        "material": {
-          "ar": "PTFE (تفلون)",
-          "en": "PTFE (Teflon)"
-        },
-        "qty": 1
-      },
-      {
-        "no": 9,
+        "no": 7,
         "part": {
           "ar": "المقبض",
           "en": "Handle"
         },
         "material": {
-          "ar": "ستانلس ستيل",
-          "en": "Stainless Steel"
+          "ar": "ألمنيوم",
+          "en": "Aluminum"
         },
         "qty": 1
       },
       {
-        "no": 10,
+        "no": 8,
         "part": {
           "ar": "الجسم 2",
           "en": "Body 2"
@@ -2317,63 +2286,60 @@
     "sectionalDrawing": "/products/13-1.png",
     "models": [
       {
-        "code": "TXM050",
+        "code": "2TXMG-WH050",
         "size": "1/2\"",
+        "diameter": 10
+      },
+      {
+        "code": "2TXMG-WH075",
+        "size": "3/4\"",
         "diameter": 15
       },
       {
-        "code": "TXM075",
-        "size": "3/4\"",
-        "diameter": 19
-      },
-      {
-        "code": "TXM100",
+        "code": "2TXMG-WH100",
         "size": "1\"",
-        "diameter": 25
+        "diameter": 19
       }
     ]
   },
-  // Error
   {
     "id": "12",
     "image": [
       "/products/14.png"
     ],
     "name": {
-      "ar": "صمام كروي نحاس ثقيل ( يد فراشة ) للاستخدامات الشاقة",
-      "en": "THREAD BALL VALVE (Heavy-Duty) T Handle"
+      "ar": "صمام نحاس كروي ( بسن خارجي 2 )",
+      "en": "THREAD BALL VALVE"
     },
     "description": {
-      "ar": "صمم للتحكم الدقيق في تدفق السوائل والغازات من خلال كرة داخلية للإغلاق بتقنية Full Port. يتميز بمقبض T (فراشة) مدمج يوفر المساحة مما يجعله مثالياً للتركيب في المساحات المحدودة. يتميز بهيكل متين يتحمل الاستخدامات الشاقة Heavy-Duty مع مقاومة ممتازة لدرجات الحرارة المرتفعة والمنخفضة.",
-      "en": "Designed for precise control of fluid and gas flow through an internal ball with Full Port technology. Features a compact T-handle (butterfly) for space-saving installation in tight areas. It features a heavy-duty robust body that withstands demanding applications with excellent resistance to high and low temperatures."
+      "ar": "محبس كروي قياسي ( Regular Port ) بسن خارجي من الجهتين (M/M). جسم من النحاس عالي الجودة ومقبض يد مطلي بالفينيل. تصميم عملي لسهولة التركيب والاستخدام.",
+      "en": "Regular Port Brass Ball Valve with Male threads on both sides (M/M). High-quality brass body and vinyl-coated handle. Practical design for easy installation and use."
     },
     "category": {
       "ar": "محابس كروية",
       "en": "Ball Valves"
     },
-    "series": "T-TXG SERIES",
+    "series": "2TXMMG SERIES",
     "certifications": [
       "SASO",
       "ISO 9001"
     ],
     "technicalSpecs": {
       "ar": [
-        "تقنية فول بورت Full Port",
-        "جسم مصنوع من النحاس عالي الجودة المشغل بالضغط",
-        "تصميم للساق الذي يربط المقبض مع الكرة الداخلية يمنع انفصالها حتى في ظروف الضغط العالي",
-        "صامولة نحاسية اسفل المقبض",
-        "حلقة إحكام من مطاط نيتريل (NBR) لضمان إحكام كامل ضد التسرب",
-        "مقبض T (فراشة) مدمج وأنيق يوفر المساحة",
-        "الصمام مزود بوصلة سن داخلي (F/F) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل ، إحكام أفضل ، و توافق مع جميع أنظمة المياه و الغاز"
+        "فتحة قياسية (Regular Port)",
+        "جسم مصنوع من النحاس عالي الجودة المشكل بالضغط",
+        "تصميم للساق يمنع انفصالها",
+        "حلقة إحكام مزدوجة من مطاط نيتريل (NBR) لضمان عدم التسريب",
+        "ذراع تحكم مع طبقة فينيل",
+        "صمام مزود بوصلة سن خارجي / خارجي (M/M) حسب معيار ISO 228-1"
       ],
       "en": [
-        "Full Port Technology",
+        "Regular Port",
         "Body made of high-quality forged brass",
-        "Stem design ensures internal ball connection even under high pressure",
-        "Brass nut under the handle",
-        "NBR sealing ring ensures leak-proof performance",
-        "Compact T-handle (butterfly) for space saving",
-        "Female (F/F) threads according to ISO 228-1 for easy installation and compatibility"
+        "Stem design prevents blowout",
+        "Double NBR O-rings for leak protection",
+        "Vinyl-coated handle",
+        "Male/Male (M/M) threads according to ISO 228-1"
       ]
     },
     "performanceSpecs": [
@@ -2382,7 +2348,7 @@
           "ar": "أقصى ضغط تشغيل",
           "en": "Max Operating Pressure"
         },
-        "value": "PN 40"
+        "value": "PN 20"
       },
       {
         "label": {
@@ -2399,8 +2365,8 @@
       {
         "no": 1,
         "part": {
-          "ar": "الجسم",
-          "en": "Body"
+          "ar": "الجسم 1",
+          "en": "Body 1"
         },
         "material": {
           "ar": "نحاس",
@@ -2412,11 +2378,11 @@
         "no": 2,
         "part": {
           "ar": "جلبة الإغلاق",
-          "en": "Shut-off Bushing"
+          "en": "Seat"
         },
         "material": {
-          "ar": "PTFE (تفلون)",
-          "en": "PTFE (Teflon)"
+          "ar": "PTFE",
+          "en": "PTFE"
         },
         "qty": 2
       },
@@ -2436,28 +2402,16 @@
         "no": 4,
         "part": {
           "ar": "حلقة إحكام",
-          "en": "Sealing Ring"
+          "en": "O-Ring"
         },
         "material": {
-          "ar": "مطاط نيتريل (NBR)",
+          "ar": "NBR",
           "en": "NBR"
         },
-        "qty": 1
+        "qty": 2
       },
       {
         "no": 5,
-        "part": {
-          "ar": "صامولة الساق",
-          "en": "Stem Nut"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 6,
         "part": {
           "ar": "الساق",
           "en": "Stem"
@@ -2469,31 +2423,31 @@
         "qty": 1
       },
       {
+        "no": 6,
+        "part": {
+          "ar": "صامولة المقبض",
+          "en": "Handle Nut"
+        },
+        "material": {
+          "ar": "ستانلس ستيل",
+          "en": "Stainless Steel"
+        },
+        "qty": 1
+      },
+      {
         "no": 7,
         "part": {
           "ar": "المقبض",
           "en": "Handle"
         },
         "material": {
-          "ar": "الألمنيوم",
-          "en": "Aluminum"
+          "ar": "ستانلس ستيل",
+          "en": "Stainless Steel"
         },
         "qty": 1
       },
       {
         "no": 8,
-        "part": {
-          "ar": "جلبة",
-          "en": "Bushing"
-        },
-        "material": {
-          "ar": "PTFE (تفلون)",
-          "en": "PTFE (Teflon)"
-        },
-        "qty": 1
-      },
-      {
-        "no": 9,
         "part": {
           "ar": "الجسم 2",
           "en": "Body 2"
@@ -2508,63 +2462,60 @@
     "sectionalDrawing": "/products/14-1.png",
     "models": [
       {
-        "code": "T-TXG050",
+        "code": "2TXMMG050",
         "size": "1/2\"",
+        "diameter": 10
+      },
+      {
+        "code": "2TXMMG075",
+        "size": "3/4\"",
         "diameter": 15
       },
       {
-        "code": "T-TXG075",
-        "size": "3/4\"",
-        "diameter": 19
-      },
-      {
-        "code": "T-TXG100",
+        "code": "2TXMMG100",
         "size": "1\"",
-        "diameter": 25
+        "diameter": 19
       }
     ]
   },
-  // Error
   {
     "id": "13",
     "image": [
       "/products/15.png"
     ],
     "name": {
-      "ar": "صمام كروي نحاس ثقيل ( يد فراشة - سن خارجي ) للاستخدامات الشاقة",
-      "en": "THREAD BALL VALVE (Heavy-Duty) T Handle M/F"
+      "ar": "( محبس فراشة ) بسن خارجي 2",
+      "en": "THREAD BALL VALVE"
     },
     "description": {
-      "ar": "صمم للتحكم الدقيق في تدفق السوائل والغازات من خلال كرة داخلية للإغلاق بتقنية Full Port. يتميز بتصميم فريد يجمع بين السن الداخلي والسن الخارجي (F/M)، مع مقبض T (فراشة) مدمج يوفر المساحة مما يجعله مثالياً للتركيب في المساحات المحدودة. يتميز بهيكل متين يتحمل الاستخدامات الشاقة Heavy-Duty مع مقاومة ممتازة لدرجات الحرارة المرتفعة والمنخفضة.",
-      "en": "Designed for precise control of fluid and gas flow through an internal ball with Full Port technology. Features a unique design combining male and female threads (F/M), with a compact T-handle (butterfly) for space-saving installation. It features a heavy-duty robust body that withstands demanding applications with excellent resistance to high and low temperatures."
+      "ar": "محبس كروي قياسي ( Regular Port ) بسن خارجي (M/M) ومقبض فراشة. مثالي للاستخدام في الأماكن الضيقة حيث تتوفر وصلات سن داخلي. مصنع من النحاس عالي الجودة.",
+      "en": "Regular Port Brass Ball Valve with Male threads (M/M) and butterfly handle. Ideal for use in tight spaces where female connections are present. Made of high-quality brass."
     },
     "category": {
       "ar": "محابس كروية",
       "en": "Ball Valves"
     },
-    "series": "T-TXM SERIES",
+    "series": "2TXMMG-WH SERIES",
     "certifications": [
       "SASO",
       "ISO 9001"
     ],
     "technicalSpecs": {
       "ar": [
-        "تقنية فول بورت Full Port",
-        "جسم مصنوع من النحاس عالي الجودة المشغل بالضغط",
-        "تصميم للساق الذي يربط المقبض مع الكرة الداخلية يمنع انفصالها حتى في ظروف الضغط العالي",
-        "صامولة نحاسية اسفل المقبض",
-        "حلقة إحكام من مطاط نيتريل (NBR) لضمان إحكام كامل ضد التسرب",
-        "مقبض T (فراشة) مدمج وأنيق يوفر المساحة",
-        "الصمام مزود بوصلة سن داخلي و سن خارجي (F/M) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل ، إحكام أفضل ، و توافق مع جميع أنظمة المياه و الغاز"
+        "فتحة قياسية (Regular Port)",
+        "جسم مصنوع من النحاس عالي الجودة المشكل بالضغط",
+        "تصميم للساق يمنع انفصالها",
+        "حلقة إحكام مزدوجة من مطاط نيتريل (NBR)",
+        "مقبض فراشة من الألومنيوم مطلي بالكروم",
+        "صمام مزود بوصلة سن خارجي / خارجي (M/M) حسب معيار ISO 228-1"
       ],
       "en": [
-        "Full Port Technology",
+        "Regular Port",
         "Body made of high-quality forged brass",
-        "Stem design ensures internal ball connection even under high pressure",
-        "Brass nut under the handle",
-        "NBR sealing ring ensures leak-proof performance",
-        "Compact T-handle (butterfly) for space saving",
-        "Female x Male (F/M) threads according to ISO 228-1 for easy installation and compatibility"
+        "Stem design prevents blowout",
+        "Double NBR O-rings",
+        "Chrome-plated aluminum butterfly handle",
+        "Male/Male (M/M) threads according to ISO 228-1"
       ]
     },
     "performanceSpecs": [
@@ -2573,7 +2524,183 @@
           "ar": "أقصى ضغط تشغيل",
           "en": "Max Operating Pressure"
         },
-        "value": "PN 40"
+        "value": "PN 20"
+      },
+      {
+        "label": {
+          "ar": "نطاق درجة الحرارة",
+          "en": "Temperature Range"
+        },
+        "value": {
+          "ar": "من -20°م إلى 120°م",
+          "en": "-20°C to 120°C"
+        }
+      }
+    ],
+    "components": [
+      {
+        "no": 1,
+        "part": {
+          "ar": "الجسم 1",
+          "en": "Body 1"
+        },
+        "material": {
+          "ar": "نحاس",
+          "en": "Brass"
+        },
+        "qty": 1
+      },
+      {
+        "no": 2,
+        "part": {
+          "ar": "جلبة الإغلاق",
+          "en": "Seat"
+        },
+        "material": {
+          "ar": "PTFE",
+          "en": "PTFE"
+        },
+        "qty": 2
+      },
+      {
+        "no": 3,
+        "part": {
+          "ar": "الكرة",
+          "en": "Ball"
+        },
+        "material": {
+          "ar": "ستانلس ستيل",
+          "en": "Stainless Steel"
+        },
+        "qty": 1
+      },
+      {
+        "no": 4,
+        "part": {
+          "ar": "حلقة إحكام",
+          "en": "O-Ring"
+        },
+        "material": {
+          "ar": "NBR",
+          "en": "NBR"
+        },
+        "qty": 2
+      },
+      {
+        "no": 5,
+        "part": {
+          "ar": "الساق",
+          "en": "Stem"
+        },
+        "material": {
+          "ar": "نحاس",
+          "en": "Brass"
+        },
+        "qty": 1
+      },
+      {
+        "no": 6,
+        "part": {
+          "ar": "صامولة المقبض",
+          "en": "Handle Nut"
+        },
+        "material": {
+          "ar": "ستانلس ستيل",
+          "en": "Stainless Steel"
+        },
+        "qty": 1
+      },
+      {
+        "no": 7,
+        "part": {
+          "ar": "المقبض",
+          "en": "Handle"
+        },
+        "material": {
+          "ar": "ألمنيوم",
+          "en": "Aluminum"
+        },
+        "qty": 1
+      },
+      {
+        "no": 8,
+        "part": {
+          "ar": "الجسم 2",
+          "en": "Body 2"
+        },
+        "material": {
+          "ar": "نحاس",
+          "en": "Brass"
+        },
+        "qty": 1
+      }
+    ],
+    "sectionalDrawing": "/products/15-1.png",
+    "models": [
+      {
+        "code": "2TXMMG-WH050",
+        "size": "1/2\"",
+        "diameter": 10
+      },
+      {
+        "code": "2TXMMG-WH075",
+        "size": "3/4\"",
+        "diameter": 15
+      },
+      {
+        "code": "2TXMMG-WH100",
+        "size": "1\"",
+        "diameter": 19
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "image": [
+      "/products/16.png"
+    ],
+    "name": {
+      "ar": "( محبس فراشة ) بسن خارجي شد وصل",
+      "en": "THREAD UNION BALL VALVE"
+    },
+    "description": {
+      "ar": "محبس كروي شد وصل ( Union ) بسن خارجي. يوفر سهولة في الفك والتركيب للصيانة دون الحاجة لفك الأنابيب. تصميم مدمج بمقبض فراشة وجودة عالية.",
+      "en": "Thread Union Ball Valve. Provides easy disassembly for maintenance without dismantling pipes. Compact design with butterfly handle and high quality."
+    },
+    "category": {
+      "ar": "محابس كروية",
+      "en": "Ball Valves"
+    },
+    "series": "2TXMIG SERIES",
+    "certifications": [
+      "SASO",
+      "ISO 9001"
+    ],
+    "technicalSpecs": {
+      "ar": [
+        "فتحة قياسية (Regular Port)",
+        "جسم مصنوع من النحاس عالي الجودة",
+        "وصلة شد وصل (Union) لسهولة الصيانة",
+        "حلقة إحكام مزدوجة من NBR",
+        "مقبض فراشة من الألومنيوم",
+        "وصلة سن داخلي / خارجي (F/M)"
+      ],
+      "en": [
+        "Regular Port",
+        "Forged brass body",
+        "Union connection for easy maintenance",
+        "Double NBR O-rings",
+        "Aluminum butterfly handle",
+        "Female x Male (F/M) threads"
+      ]
+    },
+    "performanceSpecs": [
+      {
+        "label": {
+          "ar": "أقصى ضغط تشغيل",
+          "en": "Max Operating Pressure"
+        },
+        "value": "PN 20"
       },
       {
         "label": {
@@ -2602,17 +2729,140 @@
       {
         "no": 2,
         "part": {
-          "ar": "جلبة الإغلاق",
-          "en": "Shut-off Bushing"
+          "ar": "الكرة",
+          "en": "Ball"
         },
         "material": {
-          "ar": "PTFE (تفلون)",
-          "en": "PTFE (Teflon)"
+          "ar": "ستانلس ستيل",
+          "en": "Stainless Steel"
         },
-        "qty": 2
+        "qty": 1
       },
       {
         "no": 3,
+        "part": {
+          "ar": "صامولة الوصل",
+          "en": "Union Nut"
+        },
+        "material": {
+          "ar": "نحاس",
+          "en": "Brass"
+        },
+        "qty": 1
+      },
+      {
+        "no": 4,
+        "part": {
+          "ar": "ذيل الوصل",
+          "en": "Union Tail"
+        },
+        "material": {
+          "ar": "نحاس",
+          "en": "Brass"
+        },
+        "qty": 1
+      },
+      {
+        "no": 5,
+        "part": {
+          "ar": "المقبض",
+          "en": "Handle"
+        },
+        "material": {
+          "ar": "ألمنيوم",
+          "en": "Aluminum"
+        },
+        "qty": 1
+      }
+    ],
+    "sectionalDrawing": "/products/16-1.png",
+    "models": [
+      {
+        "code": "2TXMIG050",
+        "size": "1/2\"",
+        "diameter": 10
+      },
+      {
+        "code": "2TXMIG075",
+        "size": "3/4\"",
+        "diameter": 15
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "image": [
+      "/products/16.png"
+    ],
+    "name": {
+      "ar": "( محبس فراشة ) بسن خارجي شد وصل",
+      "en": "THREAD UNION BALL VALVE"
+    },
+    "description": {
+      "ar": "Regular Port Brass Ball Valves Female G * Male G",
+      "en": "Regular Port Brass Ball Valves Female G * Male G"
+    },
+    "category": {
+      "ar": "محابس كروية",
+      "en": "Ball Valves"
+    },
+    "series": "2TXMIG SERIES",
+    "certifications": [
+      "SASO",
+      "ISO 9001"
+    ],
+    "technicalSpecs": {
+      "ar": [
+        "فتحة قياسية (Regular Port)",
+        "جسم مصنوع من النحاس عالي الجودة المشكل بالضغط",
+        "تصميم للساق الذي يربط المقبض مع الكرة الداخلية يمنع انفصالها حتى في ظروف الضغط العالي",
+        "حلقة إحكام مزدوجة من مطاط نيتريل (NBR) تحيط بالساق لضمان عدم التسريب",
+        "مقبض فراشة من الألومنيوم بلمسة كروم لامعة",
+        "الصمام مزود بوصلة سن داخلي و سن خارجي ( F / M ) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل ، إحكام أفضل ، و توافق مع جميع أنظمة المياه و الغاز"
+      ],
+      "en": [
+        "Regular Port",
+        "Body made of high-quality forged brass",
+        "Stem design prevents blowout even in high-pressure conditions",
+        "Double NBR sealing ring ensures leak-proof performance",
+        "Chrome-plated aluminum butterfly handle",
+        "Valve equipped with Female x Male connection (F/M) according to ISO 228-1 ensuring easier installation, better sealing, and compatibility with water and gas systems"
+      ]
+    },
+    "performanceSpecs": [
+      {
+        "label": {
+          "ar": "أقصى ضغط تشغيل",
+          "en": "Max Operating Pressure"
+        },
+        "value": "PN 20"
+      },
+      {
+        "label": {
+          "ar": "نطاق درجة الحرارة",
+          "en": "Temperature Range"
+        },
+        "value": {
+          "ar": "من -20°م إلى 120°م",
+          "en": "-20°C to 120°C"
+        }
+      }
+    ],
+    "components": [
+      {
+        "no": 1,
+        "part": {
+          "ar": "الجسم",
+          "en": "Body"
+        },
+        "material": {
+          "ar": "نحاس",
+          "en": "Brass"
+        },
+        "qty": 1
+      },
+      {
+        "no": 2,
         "part": {
           "ar": "الكرة",
           "en": "Ball"
@@ -2624,448 +2874,9 @@
         "qty": 1
       },
       {
-        "no": 4,
-        "part": {
-          "ar": "حلقة إحكام",
-          "en": "Sealing Ring"
-        },
-        "material": {
-          "ar": "مطاط نيتريل (NBR)",
-          "en": "NBR"
-        },
-        "qty": 1
-      },
-      {
-        "no": 5,
-        "part": {
-          "ar": "صامولة الساق",
-          "en": "Stem Nut"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 6,
-        "part": {
-          "ar": "الساق",
-          "en": "Stem"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 7,
-        "part": {
-          "ar": "المقبض",
-          "en": "Handle"
-        },
-        "material": {
-          "ar": "الألمنيوم",
-          "en": "Aluminum"
-        },
-        "qty": 1
-      },
-      {
-        "no": 8,
-        "part": {
-          "ar": "جلبة",
-          "en": "Bushing"
-        },
-        "material": {
-          "ar": "PTFE (تفلون)",
-          "en": "PTFE (Teflon)"
-        },
-        "qty": 1
-      },
-      {
-        "no": 9,
-        "part": {
-          "ar": "الجسم 2",
-          "en": "Body 2"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      }
-    ],
-    "sectionalDrawing": "/products/15-1.png",
-    "models": [
-      {
-        "code": "T-TXM050",
-        "size": "1/2\"",
-        "diameter": 15
-      },
-      {
-        "code": "T-TXM075",
-        "size": "3/4\"",
-        "diameter": 19
-      },
-      {
-        "code": "T-TXM100",
-        "size": "1\"",
-        "diameter": 25
-      }
-    ]
-  },
-  // Error
-  {
-    "id": "14",
-    "image": [
-      "/products/16.png"
-    ],
-    "name": {
-      "ar": "محبس نحاس سكين ( ثقيل ) للاستخدامات الشاقة",
-      "en": "THREAD GATE VALVE (Heavy-Duty)"
-    },
-    "description": {
-      "ar": "صمم للتحكم الكامل في فتح و غلق تدفق المياه بدقة و كفاءة عالية بفضل جسمه النحاسي المتين المشغل بالضغط يوفر هذا الصمام متانة استثنائية و عمراً تشغيلياً طويلاً في أصعب ظروف التشغيل . يتميز بتصميم يضمن تدفقاً كاملاً دون عوائق عند الفتح الكلي مع إغلاق محكم يمنع التسريب تماماً مما يجعله الخيار الأول لأنظمة المياه السكنية و الصناعية و التجارية",
-      "en": "Designed for complete control of water flow with high precision and efficiency. Thanks to its robust forged brass body, this valve provides exceptional durability and long service life in demanding conditions. It features a design that ensures unobstructed full flow when fully open and tight closure to prevent any leaks, making it the primary choice for residential, industrial, and commercial water systems."
-    },
-    "category": {
-      "ar": "محابس سكين",
-      "en": "Gate Valves"
-    },
-    "series": "GTV SERIES",
-    "certifications": [
-      "SASO",
-      "ISO 9001"
-    ],
-    "technicalSpecs": {
-      "ar": [
-        "جسم مصنوع من النحاس عالي الجودة المشغل بالضغط",
-        "تصميم للساق يمنع انفصاله حتى في ظروف الضغط العالي",
-        "حلقة إحكام مزدوجة من مطاط (EPDM) تحيط بالساق لضمان عدم التسريب",
-        "إغلاق محكم يضمن منع تسريب المياه تماماً",
-        "الصمام مزود بوصلة سن داخلي (F/F) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل ، إحكام أفضل ، و توافق مع جميع أنظمة المياه"
-      ],
-      "en": [
-        "Body made of high-quality forged brass",
-        "Stem design ensures internal ball stays connected even in high-pressure conditions",
-        "Double EPDM O-rings on the stem to ensure leak-proof performance",
-        "Tight closure ensures completely preventing water leakage",
-        "Female (F/F) threads according to ISO 228-1 for easy installation, better sealing, and compatibility"
-      ]
-    },
-    "performanceSpecs": [
-      {
-        "label": {
-          "ar": "أقصى ضغط تشغيل",
-          "en": "Max Operating Pressure"
-        },
-        "value": "PN 25"
-      },
-      {
-        "label": {
-          "ar": "نطاق درجة الحرارة",
-          "en": "Temperature Range"
-        },
-        "value": {
-          "ar": "من 0°م إلى 120°م",
-          "en": "0°C to 120°C"
-        }
-      }
-    ],
-    "components": [
-      {
-        "no": 1,
-        "part": {
-          "ar": "الجسم",
-          "en": "Body"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 2,
-        "part": {
-          "ar": "البوابة",
-          "en": "Gate"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
         "no": 3,
         "part": {
-          "ar": "غطاء فوقي",
-          "en": "Bonnet"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 4,
-        "part": {
-          "ar": "الساق",
-          "en": "Stem"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 5,
-        "part": {
-          "ar": "برغي",
-          "en": "Screw"
-        },
-        "material": {
-          "ar": "ستانلس ستيل",
-          "en": "Stainless Steel"
-        },
-        "qty": 1
-      },
-      {
-        "no": 6,
-        "part": {
-          "ar": "اليد",
-          "en": "Hand wheel"
-        },
-        "material": {
-          "ar": "ألمنيوم",
-          "en": "Aluminum"
-        },
-        "qty": 1
-      },
-      {
-        "no": 7,
-        "part": {
-          "ar": "صامولة إحكام",
-          "en": "Packing Nut"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 8,
-        "part": {
-          "ar": "حشوة الساق",
-          "en": "Stem Packing"
-        },
-        "material": {
-          "ar": "PTFE (تفلون)",
-          "en": "PTFE (Teflon)"
-        },
-        "qty": 1
-      }
-    ],
-    "sectionalDrawing": "/products/16-1.png",
-    "models": [
-      {
-        "code": "GTV050",
-        "size": "1/2\"",
-        "diameter": 13
-      },
-      {
-        "code": "GTV075",
-        "size": "3/4\"",
-        "diameter": 17.5
-      },
-      {
-        "code": "GTV100",
-        "size": "1\"",
-        "diameter": 23
-      },
-      {
-        "code": "GTV125",
-        "size": "1-1/4\"",
-        "diameter": 30
-      },
-      {
-        "code": "GTV150",
-        "size": "1-1/2\"",
-        "diameter": 37
-      },
-      {
-        "code": "GTV200",
-        "size": "2\"",
-        "diameter": 47
-      }
-    ]
-  },
-  // Error
-  {
-    "id": "15",
-    "image": [
-      "/products/17.png"
-    ],
-    "name": {
-      "ar": "محبس نحاس زاوية سكين ( ثقيل ) للاستخدامات الشاقة",
-      "en": "THREAD GATE VALVE ANGLE TYPE (Heavy-Duty)"
-    },
-    "description": {
-      "ar": "صمام نحاسي سكين ( زاوية ) شد وصل صمم خصيصاً للتحكم في تدفق المياه في الزوايا . يتميز بهيكل نحاسي متين بلمسة نهائية دقيقة مما يضمن مقاومة عالية للتآكل و عمراً طويلاً . مزود بوصلة شد وصل ( Union ) تسهل عملية الفك و التركيب و الصيانة دون الحاجة لقطع الأنابيب . يوفر إغلاقاً محكماً و أداءً موثوقاً في مختلف تطبيقات السباكة المنزلية و الصناعية",
-      "en": "Brass gate valve (angle type) with union, specifically designed for controlling water flow in corners. It features a robust brass body with a precise finish, ensuring high corrosion resistance and long life. Equipped with a Union connection that facilitates assembly, disassembly, and maintenance without pipe cutting. Provides tight closure and reliable performance in various domestic and industrial plumbing applications."
-    },
-    "category": {
-      "ar": "محابس سكين",
-      "en": "Gate Valves"
-    },
-    "series": "SRV SERIES",
-    "certifications": [
-      "SASO",
-      "ISO 9001"
-    ],
-    "technicalSpecs": {
-      "ar": [
-        "جسم مصنوع من النحاس عالي الجودة المشغل بالضغط",
-        "تصميم للساق يمنع انفصاله حتى في ظروف الضغط العالي",
-        "حلقة إحكام مزدوجة من مطاط (EPDM) تحيط بالساق لضمان عدم التسريب",
-        "إغلاق محكم يضمن منع تسريب المياه تماماً",
-        "وصلة شد وصل ( Union ) لسهولة الفك و التركيب",
-        "الصمام مزود بوصلة سن داخلي و سن خارجي (F/M) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل ، إحكام أفضل ، و توافق مع جميع أنظمة المياه"
-      ],
-      "en": [
-        "Body made of high-quality forged brass",
-        "Stem design ensures internal ball stays connected even in high-pressure conditions",
-        "Double EPDM O-rings on the stem to ensure leak-proof performance",
-        "Tight closure ensures completely preventing water leakage",
-        "Union connection for easy disassembly and assembly",
-        "Female x Male (F/M) threads according to ISO 228-1 for easy installation, better sealing, and compatibility"
-      ]
-    },
-    "performanceSpecs": [
-      {
-        "label": {
-          "ar": "أقصى ضغط تشغيل",
-          "en": "Max Operating Pressure"
-        },
-        "value": "PN 25"
-      },
-      {
-        "label": {
-          "ar": "نطاق درجة الحرارة",
-          "en": "Temperature Range"
-        },
-        "value": {
-          "ar": "من 0°م إلى 120°م",
-          "en": "0°C to 120°C"
-        }
-      }
-    ],
-    "components": [
-      {
-        "no": 1,
-        "part": {
-          "ar": "الجسم",
-          "en": "Body"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 2,
-        "part": {
-          "ar": "البوابة",
-          "en": "Gate"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 3,
-        "part": {
-          "ar": "غطاء فوقي",
-          "en": "Bonnet"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 4,
-        "part": {
-          "ar": "الساق",
-          "en": "Stem"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 5,
-        "part": {
-          "ar": "برغي",
-          "en": "Screw"
-        },
-        "material": {
-          "ar": "ستانلس ستيل",
-          "en": "Stainless Steel"
-        },
-        "qty": 1
-      },
-      {
-        "no": 6,
-        "part": {
-          "ar": "اليد",
-          "en": "Hand wheel"
-        },
-        "material": {
-          "ar": "ألمنيوم",
-          "en": "Aluminum"
-        },
-        "qty": 1
-      },
-      {
-        "no": 7,
-        "part": {
-          "ar": "صامولة إحكام",
-          "en": "Packing Nut"
-        },
-        "material": {
-          "ar": "نحاس",
-          "en": "Brass"
-        },
-        "qty": 1
-      },
-      {
-        "no": 8,
-        "part": {
-          "ar": "حشوة الساق",
-          "en": "Stem Packing"
-        },
-        "material": {
-          "ar": "PTFE (تفلون)",
-          "en": "PTFE (Teflon)"
-        },
-        "qty": 1
-      },
-      {
-        "no": 9,
-        "part": {
-          "ar": "صامولة وصلة",
+          "ar": "صامولة الوصل",
           "en": "Union Nut"
         },
         "material": {
@@ -3075,14 +2886,161 @@
         "qty": 1
       },
       {
-        "no": 10,
+        "no": 4,
         "part": {
-          "ar": "بولي بروبيلين PPR",
-          "en": "Polypropylene PPR"
+          "ar": "ذيل الوصل",
+          "en": "Union Tail"
         },
         "material": {
-          "ar": "شد وصل",
-          "en": "Union Connection"
+          "ar": "نحاس",
+          "en": "Brass"
+        },
+        "qty": 1
+      },
+      {
+        "no": 5,
+        "part": {
+          "ar": "المقبض",
+          "en": "Handle"
+        },
+        "material": {
+          "ar": "ألمنيوم",
+          "en": "Aluminum"
+        },
+        "qty": 1
+      }
+    ],
+    "sectionalDrawing": "/products/16-1.png",
+    "models": [
+      {
+        "code": "2TXMIG050",
+        "size": "1/2\"",
+        "diameter": 10
+      },
+      {
+        "code": "2TXMIG075",
+        "size": "3/4\"",
+        "diameter": 15
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "image": [
+      "/products/17.png"
+    ],
+    "name": {
+      "ar": "محبس زاوية فراشة شد وصل",
+      "en": "THREAD UNION BALL VALVE"
+    },
+    "description": {
+      "ar": "Regular Port Brass Ball Valves Female G * Male G",
+      "en": "Regular Port Brass Ball Valves Female G * Male G"
+    },
+    "category": {
+      "ar": "محابس كروية",
+      "en": "Ball Valves"
+    },
+    "series": "2TXMILG-WH SERIES",
+    "certifications": [
+      "SASO",
+      "ISO 9001"
+    ],
+    "technicalSpecs": {
+      "ar": [
+        "فتحة قياسية (Regular Port)",
+        "جسم مصنوع من النحاس عالي الجودة المشكل بالضغط",
+        "تصميم للساق الذي يربط المقبض مع الكرة الداخلية يمنع انفصالها حتى في ظروف الضغط العالي",
+        "حلقة إحكام مزدوجة من مطاط نيتريل (NBR) تحيط بالساق لضمان عدم التسريب",
+        "مقبض فراشة من الألومنيوم بلمسة كروم لامعة",
+        "الصمام زاوية مزود بوصلة سن داخلي و سن خارجي مع شد وصل ( F / M ) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل ، إحكام أفضل ، و توافق مع جميع أنظمة المياه و الغاز"
+      ],
+      "en": [
+        "Regular Port",
+        "Body made of high-quality forged brass",
+        "Stem design prevents blowout even in high-pressure conditions",
+        "Double NBR sealing ring ensures leak-proof performance",
+        "Chrome-plated aluminum butterfly handle",
+        "Angle valve equipped with Female x Male connection with Union (F/M) according to ISO 228-1 ensuring easier installation, better sealing, and compatibility with water and gas systems"
+      ]
+    },
+    "performanceSpecs": [
+      {
+        "label": {
+          "ar": "أقصى ضغط تشغيل",
+          "en": "Max Operating Pressure"
+        },
+        "value": "PN 20"
+      },
+      {
+        "label": {
+          "ar": "نطاق درجة الحرارة",
+          "en": "Temperature Range"
+        },
+        "value": {
+          "ar": "من -20°م إلى 120°م",
+          "en": "-20°C to 120°C"
+        }
+      }
+    ],
+    "components": [
+      {
+        "no": 1,
+        "part": {
+          "ar": "الجسم",
+          "en": "Body"
+        },
+        "material": {
+          "ar": "نحاس",
+          "en": "Brass"
+        },
+        "qty": 1
+      },
+      {
+        "no": 2,
+        "part": {
+          "ar": "الكرة",
+          "en": "Ball"
+        },
+        "material": {
+          "ar": "ستانلس ستيل",
+          "en": "Stainless Steel"
+        },
+        "qty": 1
+      },
+      {
+        "no": 3,
+        "part": {
+          "ar": "صامولة الوصل",
+          "en": "Union Nut"
+        },
+        "material": {
+          "ar": "نحاس",
+          "en": "Brass"
+        },
+        "qty": 1
+      },
+      {
+        "no": 4,
+        "part": {
+          "ar": "ذيل الوصل",
+          "en": "Union Tail"
+        },
+        "material": {
+          "ar": "نحاس",
+          "en": "Brass"
+        },
+        "qty": 1
+      },
+      {
+        "no": 5,
+        "part": {
+          "ar": "المقبض",
+          "en": "Handle"
+        },
+        "material": {
+          "ar": "ألمنيوم",
+          "en": "Aluminum"
         },
         "qty": 1
       }
@@ -3090,34 +3048,14 @@
     "sectionalDrawing": "/products/17-1.png",
     "models": [
       {
-        "code": "SRV050",
+        "code": "2TXMILG-WH050",
         "size": "1/2\"",
-        "diameter": 13
+        "diameter": 10
       },
       {
-        "code": "SRV075",
+        "code": "2TXMILG-WH075",
         "size": "3/4\"",
-        "diameter": 17.5
-      },
-      {
-        "code": "SRV100",
-        "size": "1\"",
-        "diameter": 23
-      },
-      {
-        "code": "SRV125",
-        "size": "1-1/4\"",
-        "diameter": 30
-      },
-      {
-        "code": "SRV150",
-        "size": "1-1/2\"",
-        "diameter": 37
-      },
-      {
-        "code": "SRV200",
-        "size": "2\"",
-        "diameter": 47
+        "diameter": 15
       }
     ]
   },
@@ -3178,7 +3116,7 @@
         }
       }
     ],
-    "sectionalDrawing":"/products/18-1.png",
+    "sectionalDrawing": "/products/18-1.png",
     "models": [
       {
         "code": "TGVG038",
@@ -3237,7 +3175,7 @@
     "image": [
       "/products/19.png"
     ],
-    "sectionalDrawing":"/products/19-1.png",
+    "sectionalDrawing": "/products/19-1.png",
     "name": {
       "ar": "محبس بوابة PPR",
       "en": "PPR Gate Valve"
@@ -3355,7 +3293,7 @@
         }
       }
     ],
-    "sectionalDrawing":"/products/20-1.png",
+    "sectionalDrawing": "/products/20-1.png",
     "models": [
       {
         "code": "HBV201050",
@@ -3374,7 +3312,7 @@
     "image": [
       "/products/21.png"
     ],
-    "sectionalDrawing":"/products/21-1.png",
+    "sectionalDrawing": "/products/21-1.png",
     "name": {
       "ar": "بزبور ( صنبور ) شد وصل",
       "en": "Hose Bibcock with Union"
@@ -3447,9 +3385,9 @@
     "image": [
       "/products/22.png"
     ],
-    "sectionalDrawing":"/products/22-1.png",
+    "sectionalDrawing": "/products/22-1.png",
     "name": {
-      "ar": "رداد باب نحاس (نابض)",
+      "ar": "رداد باب نحاس ",
       "en": "Spring Check Valve"
     },
     "description": {
@@ -3576,9 +3514,9 @@
     "image": [
       "/products/23.png"
     ],
-    "sectionalDrawing":"/products/23-1.png",
+    "sectionalDrawing": "/products/23-1.png",
     "name": {
-      "ar": "رداد باب نحاس (أرجوحي)",
+      "ar": "رداد باب نحاس",
       "en": "Swing Check Valve"
     },
     "description": {
@@ -3696,10 +3634,10 @@
     "image": [
       "/products/24.png"
     ],
-    "sectionalDrawing":"/products/24-1.png",
+    "sectionalDrawing": "/products/24-1.png",
     "name": {
-      "ar": "رداد باب نحاس (سن داخلي/خارجي)",
-      "en": "Spring Check Valve (F/M)"
+      "ar": "رداد باب نحاس ",
+      "en": "Spring Check Valve "
     },
     "description": {
       "ar": "جسم مصنوع من النحاس المصبوب عالي الجودة ، يمنح متانة وقوة تحمل طويلة الأمد. مصنوع كامل من النحاس. الصمام مزود بوصلة سن داخلي و سن خارجي ( F/M ) مصنوعة حسب المعيار العالمي ISO 228-1 مما يضمن تركيب أسهل ، إحكام أفضل ، و توافق مع جميع أنظمة المياه و الغاز",
@@ -3774,9 +3712,9 @@
     "image": [
       "/products/25.png"
     ],
-    "sectionalDrawing":"/products/25-1.png",
+    "sectionalDrawing": "/products/25-1.png",
     "name": {
-      "ar": "رداد باب نحاس (سن خارجي/خارجي)",
+      "ar": "رداد باب نحاس ",
       "en": "Spring Check Valve (M/M)"
     },
     "description": {
@@ -3845,7 +3783,7 @@
     "image": [
       "/products/26.png"
     ],
-    "sectionalDrawing":"/products/26-1.png",
+    "sectionalDrawing": "/products/26-1.png",
     "name": {
       "ar": "شفاط نحاس شبك (قرص بلاستيك)",
       "en": "Foot Valve (Plastic Disc)"
@@ -3951,7 +3889,7 @@
     "image": [
       "/products/27.png"
     ],
-    "sectionalDrawing":"/products/27-1.png",
+    "sectionalDrawing": "/products/27-1.png",
     "name": {
       "ar": "شفاط نحاس شبك (فلتر نحاس)",
       "en": "Foot Valve (Brass Filter)"
