@@ -39,37 +39,37 @@ export function QuoteModal({ isOpen, onClose, productName, productData, lang }: 
         setIsSubmitting(true)
 
         try {
-            const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+201158531550" // Fallback or instructions
+            const email = "info@sudood.sa"
+            const subject = lang === 'ar' 
+                ? `طلب عرض سعر جديد: ${formData.productName}`
+                : `New Quote Request: ${formData.productName}`
             
-            const message = lang === 'ar' 
-                ? `*طلب عرض سعر جديد*\n\n` +
-                  `*المنتج:* ${formData.productName}\n` +
-                  `*الفئة:* ${formData.category}\n` +
-                  `*السلسلة:* ${formData.series || 'N/A'}\n` +
-                  `*الكمية:* ${formData.quantity}\n\n` +
-                  `*بيانات العميل:*\n` +
-                  `*الاسم:* ${formData.name}\n` +
-                  `*الشركة:* ${formData.company || 'N/A'}\n` +
-                  `*الايميل:* ${formData.email}\n` +
-                  `*الهاتف:* ${formData.phone}\n\n` +
-                  `*ملاحظات:* ${formData.notes || 'لا يوجد'}`
-                : `*New Quote Request*\n\n` +
-                  `*Product:* ${formData.productName}\n` +
-                  `*Category:* ${formData.category}\n` +
-                  `*Series:* ${formData.series || 'N/A'}\n` +
-                  `*Quantity:* ${formData.quantity}\n\n` +
-                  `*Customer Info:*\n` +
-                  `*Name:* ${formData.name}\n` +
-                  `*Company:* ${formData.company || 'N/A'}\n` +
-                  `*Email:* ${formData.email}\n` +
-                  `*Phone:* ${formData.phone}\n\n` +
-                  `*Notes:* ${formData.notes || 'None'}`;
+            const body = lang === 'ar' 
+                ? `المنتج: ${formData.productName}\n` +
+                  `الفئة: ${formData.category}\n` +
+                  `السلسلة: ${formData.series || 'N/A'}\n` +
+                  `الكمية: ${formData.quantity}\n\n` +
+                  `بيانات العميل:\n` +
+                  `الاسم: ${formData.name}\n` +
+                  `الشركة: ${formData.company || 'N/A'}\n` +
+                  `الايميل: ${formData.email}\n` +
+                  `الهاتف: ${formData.phone}\n\n` +
+                  `ملاحظات: ${formData.notes || 'لا يوجد'}`
+                : `Product: ${formData.productName}\n` +
+                  `Category: ${formData.category}\n` +
+                  `Series: ${formData.series || 'N/A'}\n` +
+                  `Quantity: ${formData.quantity}\n\n` +
+                  `Customer Info:\n` +
+                  `Name: ${formData.name}\n` +
+                  `Company: ${formData.company || 'N/A'}\n` +
+                  `Email: ${formData.email}\n` +
+                  `Phone: ${formData.phone}\n\n` +
+                  `Notes: ${formData.notes || 'None'}`;
 
-            const encodedMessage = encodeURIComponent(message)
-            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
+            const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 
-            // Open WhatsApp in a new tab
-            window.open(whatsappUrl, '_blank')
+            // Open default email client
+            window.location.href = mailtoUrl
 
             setIsSubmitting(false)
             setIsSuccess(true)
@@ -89,11 +89,11 @@ export function QuoteModal({ isOpen, onClose, productName, productData, lang }: 
                     quantity: "1",
                     notes: ""
                 })
-            }, 2000)
+            }, 5000)
         } catch (error) {
-            console.error("Error sending quote to WhatsApp:", error)
+            console.error("Error sending quote request:", error)
             setIsSubmitting(false)
-            alert(lang === 'ar' ? 'حدث خطأ أثناء الانتقال إلى واتساب. يرجى المحاولة مرة أخرى.' : 'Error opening WhatsApp. Please try again.')
+            alert(lang === 'ar' ? 'حدث خطأ أثناء فتح تطبيق البريد الإلكتروني. يرجى المحاولة مرة أخرى.' : 'Error opening email client. Please try again.')
         }
     }
 

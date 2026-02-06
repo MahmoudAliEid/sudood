@@ -41,32 +41,33 @@ export function ContactForm({ lang }: ContactFormProps) {
     setError('')
 
     try {
-      const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+201158531550"
+      const email = "info@sudood.sa"
+      const subject = lang === 'ar' 
+        ? `رسالة تواصل جديدة من ${formData.company}`
+        : `New Contact Message from ${formData.company}`
       
-      const message = lang === 'ar'
-        ? `*رسالة تواصل جديدة*\n\n` +
-          `*الاسم:* ${formData.contact}\n` +
-          `*الشركة:* ${formData.company}\n` +
-          `*الايميل:* ${formData.email}\n` +
-          `*الهاتف:* ${formData.phone}\n` +
-          `*المنتج:* ${formData.product || 'غير محدد'}\n` +
-          `*الكمية:* ${formData.quantity || '1'}\n` +
-          `*العنوان:* ${formData.address || 'غير محدد'}\n\n` +
-          `*الرسالة/الملاحظات:* ${formData.notes}`
-        : `*New Contact Message*\n\n` +
-          `*Name:* ${formData.contact}\n` +
-          `*Company:* ${formData.company}\n` +
-          `*Email:* ${formData.email}\n` +
-          `*Phone:* ${formData.phone}\n` +
-          `*Product:* ${formData.product || 'Not specified'}\n` +
-          `*Quantity:* ${formData.quantity || '1'}\n` +
-          `*Address:* ${formData.address || 'Not specified'}\n\n` +
-          `*Message/Notes:* ${formData.notes}`;
+      const body = lang === 'ar'
+        ? `الاسم: ${formData.contact}\n` +
+          `الشركة: ${formData.company}\n` +
+          `الايميل: ${formData.email}\n` +
+          `الهاتف: ${formData.phone}\n` +
+          `المنتج: ${formData.product || 'غير محدد'}\n` +
+          `الكمية: ${formData.quantity || '1'}\n` +
+          `العنوان: ${formData.address || 'غير محدد'}\n\n` +
+          `الرسالة/الملاحظات: ${formData.notes}`
+        : `Name: ${formData.contact}\n` +
+          `Company: ${formData.company}\n` +
+          `Email: ${formData.email}\n` +
+          `Phone: ${formData.phone}\n` +
+          `Product: ${formData.product || 'Not specified'}\n` +
+          `Quantity: ${formData.quantity || '1'}\n` +
+          `Address: ${formData.address || 'Not specified'}\n\n` +
+          `Message/Notes: ${formData.notes}`;
 
-      const encodedMessage = encodeURIComponent(message)
-      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
+      const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 
-      window.open(whatsappUrl, '_blank')
+      // Use window.location.href to trigger the default email client
+      window.location.href = mailtoUrl
 
       setSubmitted(true)
       setFormData({
@@ -81,8 +82,8 @@ export function ContactForm({ lang }: ContactFormProps) {
       })
       setTimeout(() => setSubmitted(false), 5000)
     } catch (err: any) {
-      console.error('WhatsApp redirect error:', err)
-      setError(lang === 'ar' ? 'فشل الانتقال إلى واتساب' : 'Failed to redirect to WhatsApp')
+      console.error('Email redirect error:', err)
+      setError(lang === 'ar' ? 'فشل فتح تطبيق البريد الإلكتروني' : 'Failed to open email client')
     } finally {
       setIsLoading(false)
     }
